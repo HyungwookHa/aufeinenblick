@@ -1,0 +1,2309 @@
+{
+  "source": {
+    "title": "Auf einen Blick – Zeiten DEUTSCH",
+    "publisher": "PONS",
+    "year": "받은 쪽에 없음 (예문으로 보아 2018~2022년 무렵 판)",
+    "language": "독일어로 쓰인 독일어 시제 요약표 (접이식, 쪽 번호 인쇄). 학습자용",
+    "how_obtained": "사용자가 찍은 사진 5장(인쇄 쪽 1~5)을 독일어 OCR로 읽고, 휘거나 반사된 부분은 확대한 사진과 대조해 판독",
+    "note": "원문을 그대로 옮긴 것이 아니라 한국어로 번역·요약한 것. 예문은 표에서 그대로 인용함. 공개 사이트에 쓸 때는 출처 표기를 유지할 것."
+  },
+  "citation": {
+    "location_rule": "각 쪽 아래에 인쇄된 쪽 번호(1~5) + 세로 단(왼쪽·가운데·오른쪽). 사진 순서가 아니라 인쇄된 번호",
+    "how_to_use": "상자에 블록(blocks[n]) 하나를 쓰면 그 블록의 p를 상자 바로 아래 출처로 달고, 항목 하나만 골라 쓰면 같은 위치의 item_p를 씀",
+    "short_template": "출처: PONS 『Auf einen Blick – Zeiten Deutsch』, {p}",
+    "full_template": "PONS, Auf einen Blick – Zeiten DEUTSCH, {p}",
+    "example": "출처: PONS 『Auf einen Blick – Zeiten Deutsch』, 5쪽 · 가운데 단"
+  },
+  "format": "섹션 구조는 pons-de-tense-notes.json(Grammatik 표)과 같은 { id: { src, p, blocks: [ { h, p, items, item_p } ] } }. p는 블록 위치, item_p는 items와 같은 순서·같은 길이로 각 항목 위치. items·h는 HTML 문자열. <em>는 독일어(이탤릭), <b>는 강조, <code>는 id. 독일어 문장부호 앞에는 공백이 없으므로 &nbsp;는 쓰지 않음. [ ]는 사진 반사로 가려진 글자를 문맥으로 채운 것. 본문 안에는 위치를 넣지 않았음.",
+  "ids": [
+    {
+      "id": "praesens",
+      "ko": "현재",
+      "de": "Präsens",
+      "where": "직설법 · 단순시제",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "praeteritum",
+      "ko": "과거",
+      "de": "Präteritum",
+      "where": "직설법 · 단순시제 · 주로 글말",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "perfekt",
+      "ko": "현재완료",
+      "de": "Perfekt",
+      "where": "직설법 · 복합시제 · 일상의 말과 글",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "plusquamperfekt",
+      "ko": "과거완료",
+      "de": "Plusquamperfekt",
+      "where": "직설법 · 복합시제",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "futur1",
+      "ko": "미래",
+      "de": "Futur I",
+      "where": "직설법 · 복합시제",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "futur2",
+      "ko": "미래완료",
+      "de": "Futur II (Futurperfekt)",
+      "where": "직설법 · 복합시제 · 말할 때는 아주 드묾",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "konj1",
+      "ko": "접속법 1식 현재",
+      "de": "Konjunktiv I – Gegenwart",
+      "where": "접속법 1식 · 단순형 · 간접화법",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "konj1_perfekt",
+      "ko": "접속법 1식 과거",
+      "de": "Konjunktiv I – Vergangenheit",
+      "where": "접속법 1식 · 복합형",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "konj1_futur",
+      "ko": "접속법 1식 미래",
+      "de": "Konjunktiv I – Zukunft",
+      "where": "접속법 1식 · 복합형",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "konj2",
+      "ko": "접속법 2식 현재",
+      "de": "Konjunktiv II – Gegenwart (würde + 원형 포함)",
+      "where": "접속법 2식 · 단순형 또는 würde형",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "konj2_pqp",
+      "ko": "접속법 2식 과거",
+      "de": "Konjunktiv II – Vergangenheit",
+      "where": "접속법 2식 · 복합형",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "imperativ",
+      "ko": "명령법",
+      "de": "Imperativ",
+      "where": "명령법 · 현재에만",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "partizip2",
+      "ko": "과거분사",
+      "de": "Partizip II (Partizip Perfekt)",
+      "where": "분사 · 3번째 기본형",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "passiv_vorgang",
+      "ko": "동작수동",
+      "de": "Vorgangspassiv (werden-Passiv)",
+      "where": "수동태 · werden + 과거분사",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "passiv_zustand",
+      "ko": "상태수동",
+      "de": "Zustandspassiv (sein-Passiv)",
+      "where": "수동태 · sein + 과거분사",
+      "also_in_grammatik_sheet": true
+    },
+    {
+      "id": "passiv_bekommen",
+      "ko": "bekommen 수동",
+      "de": "bekommen-Passiv (Dativ-Passiv)",
+      "where": "수동태 · bekommen + 과거분사 · 입말",
+      "also_in_grammatik_sheet": false
+    }
+  ],
+  "pons_zeiten_by_id": {
+    "praesens": {
+      "src": "1쪽 · 왼쪽·가운데·오른쪽 단",
+      "p": "1쪽 · 왼쪽·가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "1쪽 · 왼쪽 단",
+          "items": [
+            "현재 어간(<em>Präsensstamm</em> = 원형에서 어미 <em>-(e)n</em>을 뗀 것) + 인칭 어미",
+            "<em>kommen</em>: <em>ich komm-e, du komm-st, er/sie/es komm-t, wir komm-en, ihr komm-t, sie/Sie komm-en</em>"
+          ],
+          "item_p": [
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "발음 때문에 글자를 넣거나 빼는 경우 (<em>Besonderheiten</em>)",
+          "p": "1쪽 · 왼쪽 단",
+          "items": [
+            "e 넣기(<em>e-Einschub</em>): 어간이 <em>-d, -t</em>로 끝나거나, <em>-l, -m, -n, -r</em>이 아닌 자음 + <em>-m</em>·<em>-n</em>으로 끝나면 2인칭 단수·복수(<em>du</em>형·<em>ihr</em>형) 어미 앞에 <em>-e</em>를 넣음: <em>du arbeitest – ihr arbeitet; du redest – ihr redet; du atmest – ihr atmet; du rechnest – ihr rechnet</em>",
+            "예외: <em>du</em>형·<em>er/sie/es</em>형에서 모음이 바뀌는 동사는 e를 넣지 않음: <em>laden: du lädst, er/sie/es lädt; halten: du hältst, er/sie/es hält; treten: du trittst, er/sie/es tritt</em>",
+            "s 빠짐(<em>s-Ausfall</em>): 어간이 <em>-(s)s, -ß, -x, -tz, -z</em>로 끝나면 <em>du</em>형 어미는 <em>-t</em>: <em>du reist, du heißt, du mixt, du sitzt, du tanzt</em>",
+            "e 빠짐, <em>ich</em>형: <em>-eln</em> 동사는 <em>-l</em> 앞에 <em>e</em>가 없음: <em>radeln: ich radle, segeln: ich segle</em>",
+            "e 빠짐, <em>wir</em>형·<em>sie</em>형: <em>-eln, -ern</em> 동사는 어미의 <em>-e</em>가 빠짐: <em>wandern: wir/sie wandern, segeln: wir/sie segeln</em>",
+            "e 빠짐 가능, <em>ich</em>형: <em>-ern</em> 동사는 <em>-r</em> 앞의 <em>e</em>를 넣어도 됨: <em>wandern: ich wand(e)re, bedauern: ich bedau(e)re</em>",
+            "주의: <em>tun: ich tu(e), du tust, er/sie/es tut, wir tun, ihr tut, sie/Sie tun</em>"
+          ],
+          "item_p": [
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "어간 모음이 바뀌는 동사 (<em>Verben mit Vokalwechsel</em>)",
+          "p": "1쪽 · 가운데 단",
+          "items": [
+            "강변화(불규칙) 동사의 일부. 현재 <em>du</em>형과 <em>er/sie/es</em>형에서 어간 모음이 바뀜",
+            "<em>a → ä</em>: <em>fahren: Wir fahren mit dem Bus. Fährst du mit uns?</em>",
+            "<em>au → äu</em>: <em>laufen: Ich laufe noch schnell zum Bäcker. Maria läuft zum Supermarkt.</em>",
+            "<em>e → i(e)</em>: <em>stehlen: Ich stehle nicht. Aber Marie stiehlt Blumen aus fremden Gärten.</em> · <em>nehmen: Ich nehme heute den Bus. Nimmst du auch den Bus?</em> · <em>treten: Ich trete immer nur den Ball, aber du trittst nicht den Ball, sondern mich!</em>",
+            "그 밖에 자주 쓰는 동사: <em>essen, fallen, geben, halten, helfen, lassen, lesen, schlafen, sehen, sprechen, tragen, waschen</em>",
+            "주의: <em>wissen: ich weiß, du weißt, er/sie/es weiß, wir wissen, ihr wisst, sie wissen</em>"
+          ],
+          "item_p": [
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "1쪽 · 오른쪽 단",
+          "items": [
+            "일반적인 말과 사실: <em>Die Sommermonate heißen Juni, Juli und August.</em> · <em>Die BRD ist eine parlamentarische Demokratie.</em> · <em>Viele Babys wachen schon um 5.00 Uhr auf.</em>",
+            "지금의 일: 말하는 때에 일어나거나 (a) 되풀이되는 일 (b). 과거 (c)나 미래 (d)까지 이어질 수 있음: (a) <em>Was liest du denn da?</em> (b) <em>Gemüse kaufe ich stets auf dem Markt ein.</em> (c) <em>Es regnet schon seit Stunden.</em> (d) <em>Heute fange ich mit meiner neuen Diät an.</em>",
+            "앞으로의 일: 흔히 시간 표현과 함께: <em>Ich schreibe dir morgen eine E-Mail.</em> · <em>Der Bundestag beschließt bestimmt wieder, die Steuern zu erhöhen.</em> · <em>Am Samstag will ich mir ein Fahrrad kaufen.</em>",
+            "지난 일 (역사적 현재, <em>historisches Präsens</em>): 지난 일을 생생하게 들려줄 때. 주로 말할 때: <em>Ich liege endlich am Strand und will mich entspannen. – Da kommt ein Verkäufer und bietet Melonen an.</em>",
+            "소설, 전기 같은 이야기하는 글에서도 서술 시제로 자주 씀: <em>Als es schließlich Nacht wird, schleicht die kleine Hexe in ihr Haus.</em> · <em>Rudolf Diesel wird am 18.03.1858 in Paris geboren.</em> · <em>Dann endet der zweite Weltkrieg, und m[ein] Großvater beschließt, nicht nach Deutsch[la]nd zurückzukehren.</em>"
+          ],
+          "item_p": [
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "시간 표현으로 때를 밝힘 (<em>Präzisierung durch Zeitangaben</em>)",
+          "p": "1쪽 · 오른쪽 단",
+          "items": [
+            "현재는 아주 자주 시간 표현과 함께 씀. 시간 표현이 지금·미래·과거 중 언제인지를 밝힘",
+            "지금 (<em>gerade, jetzt, im Moment</em>): <em>Ich kann jetzt nicht telefonieren, ich koche gerade.</em> · <em>Karl liegt im Moment im Krankenhaus.</em> · <em>Sarah nimmt zurzeit an einem Tanzkurs teil.</em>",
+            "미래 (<em>morgen, bald, nächstes Jahr</em>): <em>Morgen gehe ich mit Jan ins Kino.</em> · <em>Wo findet im Jahr 2022 die Fußball-WM statt?</em> · <em>Mario tritt nächstes Jahr eine Stelle in Berlin an.</em>",
+            "과거 (<em>gestern, letzte Woche, vorhin</em>): <em>Letzte Woche bist du noch in Australien, und heute stehst du hier in Berlin auf dem Ku'damm. Wahnsinn!</em> · <em>Gestern Abend um zehn Uhr will ich schlafen gehen. Da klingelt es an der Tür.</em>"
+          ],
+          "item_p": [
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "praeteritum": {
+      "src": "3쪽 · 왼쪽 단",
+      "p": "3쪽 · 왼쪽 단",
+      "blocks": [
+        {
+          "h": "소개",
+          "p": "3쪽 · 왼쪽 단",
+          "items": [
+            "주로 글을 쓸 때 씀. 만들 때는 약변화 동사와 강변화 동사의 구분이 중요"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "약변화 동사 (공식 박스)",
+          "p": "3쪽 · 왼쪽 단",
+          "items": [
+            "현재 어간 + <em>-t-</em> + 인칭 어미 <em>-e, -est, -e, -en, -et, -en</em>: <em>ich lebte, du lebtest, er/sie/es lebte, wir lebten, ihr lebtet, sie/Sie lebten</em>",
+            "e 넣기는 현재와 같은 규칙: <em>ich beendete, du beendetest, er/sie/es beendete, wir beendeten, ihr beendetet, sie/Sie beendeten</em>"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "강변화 동사 (공식 박스)",
+          "p": "3쪽 · 왼쪽 단",
+          "items": [
+            "과거 어간 + 인칭 어미 <em>–, -st, –, -en, -t, -en</em>. 과거 어간은 사전이나 동사표에서 2번째 기본형으로 찾음",
+            "<em>ich</em>형과 <em>er/sie/es</em>형은 어미가 없고, 나머지 어미는 현재와 같음",
+            "<em>fahren</em> → 과거 어간 <em>fuhr</em>: <em>ich fuhr, du fuhrst, er/sie/es fuhr, wir fuhren, ihr fuhrt, sie/Sie fuhren</em>",
+            "<em>bleiben</em> → 과거 어간 <em>blieb</em>: <em>ich blieb, du bliebst, er/sie/es blieb, wir blieben, ihr bliebt, sie/Sie blieben</em>"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "혼합 동사 (공식 박스)",
+          "p": "3쪽 · 왼쪽 단",
+          "items": [
+            "과거 어간 + <em>-t-</em> + 인칭 어미 <em>-e, -est, -e, -en, -et, -en</em>",
+            "<em>bringen</em> → 과거 어간 <em>brach</em>: <em>ich brachte, du brachtest, er/sie/es brachte, wir brachten, ihr brachtet, sie/Sie brachten</em>",
+            "마찬가지: <em>brennen → brannte, denken → dachte, kennen → kannte, nennen → nannte, rennen → rannte, senden → sandte</em>"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "3쪽 · 왼쪽 단",
+          "items": [
+            "사실을 적는 글(<em>Sachtexte</em>): 회의록, 공식 편지, 신문 기사: <em>An der Besprechung nahmen fünf Kollegen teil.</em> · <em>Vor zwei Wochen beschwe[r]ten wir uns schriftlich.</em>",
+            "이야기하는 글: 소설, 동화: <em>Dann küsste die Prinzessin den Frosch.</em> · <em>Im März 2003 war Marcel ein unbekannter Mann. Dies sollte sich bald ändern. Er hatte einen Plan …</em>",
+            "격식 있는 자리에서 말할 때: 설문, 면접, 연설: <em>Wie lange blieben Sie 2005 in Berlin?</em> · <em>Erst arbeitete ich im Einkauf, dann versetzte man mich in die Marketingabteilung.</em> · <em>Unser Jubilar kam schon mit 5 Jahren in die Schule.</em>",
+            "참고 상자: 조동사 <em>sein</em>, <em>haben</em>과 화법조동사는 말할 때도 현재완료보다 과거를 더 자주 씀: <em>Ich war gestern beim Arzt.</em> (드물게: <em>Ich bin gestern beim Arzt gewesen.</em>) · <em>Martin musste/wollte/konnte/sollte/durfte noch einkaufen.</em> (드물게: <em>Martin hat noch einkaufen müssen/wollen/können/sollen/dürfen.</em>)"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단"
+          ]
+        }
+      ]
+    },
+    "perfekt": {
+      "src": "2쪽 · 가운데·오른쪽 단",
+      "p": "2쪽 · 가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "소개",
+          "p": "2쪽 · 가운데 단",
+          "items": [
+            "과거를 말하는 시제는 셋: 과거, 그리고 합성형인 현재완료와 과거완료",
+            "현재완료는 일상에서 말하고 쓸 때 가장 많이 쓰는 과거 시제"
+          ],
+          "item_p": [
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "2쪽 · 가운데 단",
+          "items": [
+            "<em>haben</em> 또는 <em>sein</em>의 현재 + 과거분사: <em>Ich habe Jazzmusik gehört.</em> · <em>Er ist spät nach Hause gekommen.</em>"
+          ],
+          "item_p": [
+            "2쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "<em>haben</em>과 쓰는 동사 (대부분)",
+          "p": "2쪽 · 가운데 단",
+          "items": [
+            "3격 또는 4격 목적어가 있는 동사: <em>Karin hat ihrem Mann nichts erzählt.</em> · <em>Wir haben gestern ein Wildschwein gesehen.</em>",
+            "목적어가 없고 장소나 상태가 바뀌지 않는 동사: <em>Ihr habt heute lange gearbeitet.</em> · <em>Vor einer Minute hat es geblitzt.</em>",
+            "재귀동사: <em>Ich habe mich sehr beeilt.</em> · <em>Ich habe mich wahnsinnig gefreut.</em>",
+            "<em>anfangen, beginnen, aufhören, abnehmen, zunehmen</em>: <em>Vorhin haben die Schmerzen aufgehört, und jetzt haben sie wieder angefangen.</em>",
+            "모든 화법조동사: <em>Das habe ich nicht gewollt.</em> · <em>Ich habe etwas erledigen müssen.</em>"
+          ],
+          "item_p": [
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "<em>sein</em>과 쓰는 동사 (주로 과정을 나타내는 동사)",
+          "p": "2쪽 · 가운데 단",
+          "items": [
+            "3격·4격 목적어가 없는 이동 동사: <em>Wir sind oft im Meer geschwommen.</em> · <em>Er ist weit gefahren.</em> 마찬가지: <em>gehen, fliegen, folgen, laufen, reisen …</em>",
+            "하지만 <em>fahren</em>과 <em>fliegen</em>은 4격 목적어가 있으면 <em>haben</em>: <em>Ich habe die Kinder nach Hause gefahren.</em>",
+            "3격·4격 목적어가 없는 변화 동사: <em>Wann bist du aufgewacht?</em> · <em>Sie ist genau heute vor einem Jahr gestorben.</em> 마찬가지: <em>aufstehen, aufwachen, ankommen, einziehen, wachsen, verblühen, einschlafen, werden …</em>",
+            "3격 목적어를 가지는 몇몇 과정 동사: <em>Was ist Ihnen denn geschehen?</em> · <em>Mir ist etwas aufgefallen.</em> 마찬가지: <em>passieren, gelingen, begegnen …</em>",
+            "<em>sein</em>과 <em>bleiben</em>: <em>Du bist aber lange im Urlaub gewesen.</em> · <em>Wir sind drei Tage in Köln geblieben.</em>"
+          ],
+          "item_p": [
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "2쪽 · 가운데·오른쪽 단",
+          "items": [
+            "일상에서 말할 때, 지난 행동·과정·상태: <em>Hast du es schon erfahren? Marek ist nach München umgezogen, weil er dort eine Stelle bei Siemens gefunden hat.</em>",
+            "개인적이거나 반쯤 격식 있는 글 (이메일, 편지, 짧은 알림): <em>Heute habe ich deinen Brief erhalten.</em> · <em>Ihre E-Mail habe ich sofort weitergeleitet.</em> · <em>Für Samstag haben wir eine Party geplant, zu der wir Sie gern einladen würden.</em> · <em>Ich habe gestern versucht, dich anzurufen, aber du hast dich nicht gemeldet.</em>",
+            "드물게 일반적인 말에도: <em>Jeder Mediziner hat studiert.</em> · <em>Ein Unfall ist so schnell geschehen.</em>",
+            "문장 맨 앞에 시간 부사를 두면 일을 미래로 옮길 수도 있음: <em>In einer St[unde] habe ich alle Einkäufe erledigt.</em>"
+          ],
+          "item_p": [
+            "2쪽 · 가운데 단",
+            "2쪽 · 가운데 단",
+            "2쪽 · 오른쪽 단",
+            "2쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "plusquamperfekt": {
+      "src": "2쪽 · 오른쪽 단",
+      "p": "2쪽 · 오른쪽 단",
+      "blocks": [
+        {
+          "h": "소개",
+          "p": "2쪽 · 오른쪽 단",
+          "items": [
+            "과거의 다른 일보다 먼저임(<em>Vorzeitigkeit</em>)을 나타냄. 주로 글을 쓸 때 과거와 함께 씀"
+          ],
+          "item_p": [
+            "2쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "2쪽 · 오른쪽 단",
+          "items": [
+            "<em>haben</em> 또는 <em>sein</em>의 과거 + 과거분사: <em>Als Max ausgeschlafen hatte, duschte er lange.</em> · <em>Nachdem alle Gäste gegangen waren, räumte Sonja die Küche auf.</em>",
+            "<em>haben</em>이냐 <em>sein</em>이냐는 현재완료와 같은 규칙"
+          ],
+          "item_p": [
+            "2쪽 · 오른쪽 단",
+            "2쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "2쪽 · 오른쪽 단",
+          "items": [
+            "과거의 다른 일보다 더 먼저 일어난 일. 거의 늘 과거 문장(드물게 현재완료 문장)과 함께: <em>Nachdem die letzten Gäste gegangen waren, räumte ich die Wohnung auf.</em> · <em>Wir hatten uns so sehr auf den Ausflug gefreut, aber dann wurde mein Sohn krank. Windpocken!</em>",
+            "주문장에도 부문장에도 올 수 있음 (표): 주문장 과거완료 + 부문장 과거 <em>Sie hatte die Hoffnung auf ein Baby schon aufgegeben, als sie plötzlich schwanger wurde.</em> · 주문장 과거 + 부문장 과거완료 <em>Sie wurde plötzlich schwanger, als sie die Hoffnung schon aufgegeben hatte.</em> · 주문장 과거완료 + 주문장 과거 <em>Sie hatte die Hoffnung schon aufgegeben. Da bekam sie doch noch ein Baby.</em>",
+            "입말에서는 가끔 현재완료 대신 씀: (식당에서) <em>Wir hatten (statt haben) einen Tisch reserviert.</em> · <em>Das alles hatte (statt habe) ich dir ja gestern schon gesagt.</em> · <em>Hatten (statt haben) wir einen Te[rm]in vereinbart?</em> · <em>Ich war (statt bin) heute schon au[f d]em Markt gewesen.</em>"
+          ],
+          "item_p": [
+            "2쪽 · 오른쪽 단",
+            "2쪽 · 오른쪽 단",
+            "2쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "futur1": {
+      "src": "4쪽 · 왼쪽 단",
+      "p": "4쪽 · 왼쪽 단",
+      "blocks": [
+        {
+          "h": "소개",
+          "p": "4쪽 · 왼쪽 단",
+          "items": [
+            "미래형은 둘: 미래(<em>Futur I</em>)와 미래완료(<em>Futur II</em>). 둘 다 미래의 일을 나타낼 수 있고, 다른 기능도 있음"
+          ],
+          "item_p": [
+            "4쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "4쪽 · 왼쪽 단",
+          "items": [
+            "<em>werden</em>의 현재형 + 본동사 원형: <em>Morgen wird es regnen.</em> · <em>Petras Eltern werden bald eine Weltreise machen.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "4쪽 · 왼쪽 단",
+          "items": [
+            "예측(<em>Prognose</em>): <em>Die Deutschen werden dieses Jahr mehr Geld für ihren Urlaub ausgeben.</em> · <em>Am Wochenende werden die Temperaturen sinken.</em> · <em>2020 wird es im Land weniger Geburten geben.</em>",
+            "약속(<em>Versprechen</em>): <em>Dieser Fehler wird mir nicht noch einmal passieren.</em> · <em>Ich werde dich bald in Dresden besuchen.</em> · <em>Das werden wir morgen alles besprechen.</em>",
+            "의도(<em>Intention</em>, 계획): <em>Bald werde ich viel Geld verdienen.</em> · <em>Heute werde ich nichts tun.</em> · <em>Dieses Jahr werde ich die Weihnachtsgeschenke rechtzeitig einkaufen.</em>",
+            "지금 일에 대한 짐작. 흔히 <em>wohl</em>과 함께: <em>Kai ist heute nicht im Büro. Er wird wohl krank sein.</em> · <em>Die Kollegen werden die neuen Pläne der Geschäftsführung (wohl) bereits kennen.</em>",
+            "참고 상자: 위협이나 경고를 나타내는 관용 표현: <em>Du wirst mich noch kennen lernen.</em> · <em>Er wird sich noch wundern/umschauen.</em> · <em>Du wirst schon sehen, was du [m]it deinem Verhalten anrichtest.</em> · <em>„Du wirst lachen, …“</em>로 놀라운 이야기를 꺼냄",
+            "미래와의 관계보다 양태(<em>modal</em>) 뜻이 더 중요한 경우가 많음. 정확한 뜻은 문맥으로 앎"
+          ],
+          "item_p": [
+            "4쪽 · 왼쪽 단",
+            "4쪽 · 왼쪽 단",
+            "4쪽 · 왼쪽 단",
+            "4쪽 · 왼쪽 단",
+            "4쪽 · 왼쪽 단",
+            "4쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "미래 대신 현재 (<em>Alternative zum Futur I</em>)",
+          "p": "4쪽 · 왼쪽 단",
+          "items": [
+            "예측, 짐작, 약속 같은 양태 뜻 없이 미래를 말할 때는 보통 현재를 씀. 미래를 가리키는 시간 표현(<em>morgen, nächste Woche, in 5 Jahren …</em>)이 미래임을 밝힘: <em>Im nächsten Jahr wählt Deutschland eine neue Regierung.</em> · <em>Morgen fällt unser Deutschkurs leider aus.</em> · <em>Nächste Woche bleibt unser Geschäft geschlossen.</em>",
+            "시간 표현이 없으면 미래임을 분명히 하려고 미래형을 씀: <em>Du hast so gute Noten. Du wirst die Prüfung sicher bestehen.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 왼쪽 단",
+            "4쪽 · 왼쪽 단"
+          ]
+        }
+      ]
+    },
+    "futur2": {
+      "src": "4쪽 · 왼쪽·가운데 단",
+      "p": "4쪽 · 왼쪽·가운데 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "4쪽 · 왼쪽 단",
+          "items": [
+            "<em>werden</em>의 현재형 + 본동사의 과거분사 + <em>haben</em> 또는 <em>sein</em>의 원형. <em>haben</em>/<em>sein</em> 고르기는 현재완료와 같은 규칙",
+            "<em>Am Ende meines Urlaubs werde ich den Eiffelturm gesehen haben.</em> · <em>Nach meinem Besuch in Paris werde ich mit der Metro gefahren sein.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 왼쪽 단",
+            "4쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "4쪽 · 가운데 단",
+          "items": [
+            "미래보다 먼저(<em>Vorzeitigkeit zum Futur I</em>): 미래의 한 일이 미래의 다른 일보다 앞섬. 미래완료의 일이 미래의 일보다 지금에 더 가까움: <em>Bis Mai werden wir die Projektplanung abgeschlossen haben. Dann werden wir alle Mitarbeiter informieren.</em>",
+            "위 예에서 계획과 알림 둘 다 미래지만, 계획이 알림보다 먼저 일어남",
+            "지난 일에 대한 짐작. 흔히 <em>wohl</em>과 함께: <em>Er wird (wohl) schon ein Hotel gebucht haben.</em> (그가 이미 호텔을 예약했으리라 짐작) · <em>Er wird mit dem alten Fahrzeug (wohl) nicht viel Freude gehabt haben.</em>",
+            "과거의 일도 나타낼 수 있어서 <em>Futurperfekt</em>라고도 부름"
+          ],
+          "item_p": [
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "미래완료 대신 현재완료 (<em>Alternative zum Futur II</em>)",
+          "p": "4쪽 · 가운데 단",
+          "items": [
+            "말할 때는 아주 드물게 씀. 번거롭게 들리고 만들기 어려워서 현재완료를 더 씀",
+            "미래완료: <em>Bis du nach Hause kommen wirst, werde ich die Koffer gepackt haben. Und übermorgen um diese Zeit werden wir beide bereits in Spanien angekommen sein. Hurra!</em>",
+            "→ 현재완료가 나음: <em>Bis du nach Hause kommst, habe ich die Koffer gepackt. Und übermorgen um diese Zeit sind wir beide bereits in Spanien angekommen. Hurra!</em>",
+            "주의: 이때 부문장에는 미래가 아니라 현재를 씀"
+          ],
+          "item_p": [
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단"
+          ]
+        }
+      ]
+    },
+    "konj1": {
+      "src": "5쪽 · 가운데 단",
+      "p": "5쪽 · 가운데 단",
+      "blocks": [
+        {
+          "h": "소개",
+          "p": "5쪽 · 가운데 단",
+          "items": [
+            "접속법은 가능성의 꼴(<em>Möglichkeitsform</em>). 접속법 1식(K I)과 2식(K II)이 있음",
+            "K I은 간접화법의 접속법이라고도 함. 주로 글에서 남이 말하거나 생각하거나 뜻한 것을 전할 때 씀"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단",
+            "5쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "5쪽 · 가운데 단",
+          "items": [
+            "현재: 현재 어간 + <em>-e/-est/-e/-en/-et/-en</em>: <em>Das Fernsehen berichtete, dass man weitere Probleme befürchte.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "5쪽 · 가운데 단",
+          "items": [
+            "주문장에 <em>sagen, meinen, erklären, behaupten, versichern</em> 같은 동사가 오고, 간접화법은 <em>dass</em> 부문장: <em>Der Vater sagte seiner Tochter, dass sie um 20.00 Uhr zu Hause sein solle.</em>",
+            "<em>dass</em> 없이도 씀. 그때 K I 동사는 2번째 자리: <em>Sie behauptete, es gehe ihr gut.</em>",
+            "예/아니오로 답하는 간접의문문은 <em>ob</em>로 시작: <em>Die Reporter fragten, ob der Minister zurücktrete.</em>",
+            "주의: K I과 직설법의 꼴이 같을 때가 많음. 그러면 K II를 쓰거나 <em>würde</em> + 원형: <em>Der Kanzler erklärte, dass beide Minister im Amt bleiben → blieben → bleiben würden.</em>",
+            "말할 때는 접속법을 아예 쓰지 않을 때가 많음: <em>Mirko hat gesagt, dass er heute nicht ins Kino geht.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단",
+            "5쪽 · 가운데 단",
+            "5쪽 · 가운데 단",
+            "5쪽 · 가운데 단",
+            "5쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "특이점",
+          "p": "5쪽 · 가운데 단",
+          "items": [
+            "간접화법의 요구·명령: <em>sollen</em>의 K I + 원형. 아주 격식 있게 들려 주로 글에서만: <em>Der Chef ordnete an, jeder solle heute seinen Schreibtisch aufräumen.</em>",
+            "수동태의 K I: 수동태를 만드는 조동사 <em>sein</em>, <em>werden</em>을 K I으로: <em>Der Arzt sagte, der Patient werde sofort geröntgt.</em> · <em>Der Patient sagte, er sei bereits geröntgt worden.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단",
+            "5쪽 · 가운데 단"
+          ]
+        }
+      ]
+    },
+    "konj1_perfekt": {
+      "src": "5쪽 · 가운데 단",
+      "p": "5쪽 · 가운데 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "5쪽 · 가운데 단",
+          "items": [
+            "과거: <em>haben</em>/<em>sein</em>의 K I + 과거분사: <em>Herr Kohl meinte, er habe das Geld nicht genommen.</em> · <em>Mona sagt, dass ihr Vater nach Paris gefahren sei.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단"
+          ]
+        }
+      ]
+    },
+    "konj1_futur": {
+      "src": "5쪽 · 가운데 단",
+      "p": "5쪽 · 가운데 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "5쪽 · 가운데 단",
+          "items": [
+            "미래: <em>werden</em>의 K I + 원형: <em>Die Polizei versicherte, dass man den Fall genau untersuchen werde.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단"
+          ]
+        }
+      ]
+    },
+    "konj2": {
+      "src": "5쪽 · 가운데·오른쪽 단",
+      "p": "5쪽 · 가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "5쪽 · 가운데·오른쪽 단",
+          "items": [
+            "K II는 현재형과 과거형이 중요",
+            "현재: 과거 어간 + <em>-e, -est, -e, -en, -et, -en</em>. 인칭 어미는 K I과 같음",
+            "많은 강변화 동사는 어간 모음도 바뀜: <em>a → ä, o → ö, u → ü</em>: <em>ich besaß → ich besäße, ich bot → ich böte, ich fuhr → ich führe, ich gab → ich gäbe, ich kam → ich käme, [i]ch nahm → ich nähme …</em> · <em>Ich käme früher an, [we]nn ich den Zug nähme.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단",
+            "5쪽 · 가운데 단",
+            "5쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "K II 대신 <em>würde</em> + 원형 (<em>Alternative zum Konjunktiv II</em>)",
+          "p": "5쪽 · 오른쪽 단",
+          "items": [
+            "규칙동사는 K II가 과거와 같은 꼴이라 보통 <em>werden</em>의 K II + 원형을 씀: <em>Wenn ich mehr Zeit hätte, dann kaufte ich die Zeitung.</em> → <em>… dann würde ich die Zeitung kaufen.</em>",
+            "말할 때는 강변화 동사도 보통 <em>werden</em>의 K II + 원형: <em>Gingest du mit mir zu diesem Konzert?</em> → <em>Würdest du mit mir zu diesem Konzert gehen?</em>",
+            "화법조동사는 보통 <em>würde</em>로 바꾸지 않음: <em>Ich könnte/wollte/dürfte/möchte/sollte/müsste heute früher nach Hause gehen.</em> (✗ <em>Ich würde … gehen können/wollen …</em>)"
+          ],
+          "item_p": [
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "수동태·화법조동사의 K II 현재 (공식 박스)",
+          "p": "5쪽 · 오른쪽 단",
+          "items": [
+            "수동태: <em>werden</em>의 K II + 과거분사: <em>Wenn unsere Stadt mehr Geld hätte, würde hier ein Schwimmbad gebaut.</em>",
+            "화법조동사: 화법조동사의 K II + 원형: <em>Ich könnte besser schlafen, wenn es leise[r w]äre.</em> · <em>Solltest du jetzt nicht in der Besprechung s[ein]?</em>"
+          ],
+          "item_p": [
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "5쪽 · 오른쪽 단",
+          "items": [
+            "공손한 부탁: 화법조동사나 <em>werden</em>이 K II, 본동사는 원형: <em>Würden Sie mir helfen?</em> · <em>Könnten Sie bitte das Fens[ter] öffnen?</em>",
+            "공손한 조언: <em>sollen</em>의 K II + 원형: <em>Du solltest besser eine Tablette nehmen. Und wenn du müde bist, dann solltest du ins Bett gehen.</em>",
+            "현실이 아닌 말: 사정이나 조건이 달랐다면 가능할 (또는 불가능할) 일: <em>Wenn wir einen Garten hätten, würde ich einen Pool bauen.</em> · <em>Hätte ich bloß keine Aktien gekauft!</em>",
+            "현실이 아닌 비교: 실제 상황을 가상의 상황과 비교. <em>als ob, wie wenn, als wenn</em> 또는 <em>als</em>(동사가 2번째 자리)로 시작: <em>Es sieht so aus, als ob/wie wenn/als wenn es bald schneien würde.</em> · <em>Deine Fotos sind so gut, als wärst du ein Profi.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "konj2_pqp": {
+      "src": "5쪽 · 오른쪽 단",
+      "p": "5쪽 · 오른쪽 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "5쪽 · 오른쪽 단",
+          "items": [
+            "과거: <em>haben</em> 또는 <em>sein</em>의 K II + 과거분사: <em>Er hätte gewonnen, [we]nn er nicht gefallen wäre.</em> · <em>Wir wären so gern [nach] Ägypten gereist.</em>",
+            "수동태: <em>sein</em>의 K II + 과거분사 + <em>worden</em>: <em>Der Wagen wäre nicht gestohlen worden, wenn er abgeschlossen worden wäre.</em>",
+            "화법조동사: <em>haben</em>의 K II + 원형 + 화법조동사 원형: <em>Hätte er Lotto gespielt, hätte er dieses Mal mehr als zwei Millionen Euro gewinnen können.</em>"
+          ],
+          "item_p": [
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "imperativ": {
+      "src": "3쪽 · 가운데·오른쪽 단 / 5쪽 · 왼쪽 단",
+      "p": "3쪽 · 가운데·오른쪽 단 / 5쪽 · 왼쪽 단",
+      "blocks": [
+        {
+          "h": "소개",
+          "p": "5쪽 · 왼쪽 단",
+          "items": [
+            "명령, 부탁, 제안에 씀"
+          ],
+          "item_p": [
+            "5쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "5쪽 · 왼쪽 단",
+          "items": [
+            "단수: 현재 어간. <em>du</em>로 부르는 한 사람(가족, 친구, 아이)에게: <em>Komm! Fahr! Lass! Lauf! Schlaf! Wasch!</em>",
+            "단수 특이점: 현재에서 e를 넣는 동사와 <em>-eln, -ern, -igen</em> 동사는 어간에 <em>-e</em>를 붙임: <em>Arbeite! Atme! Samm(e)le! Bedau(e)re! Reinige!</em>",
+            "단수 특이점: 현재에서 모음이 <em>e → i</em>로 바뀌는 동사는 <em>du</em>형에서 <em>-st</em>를 뺀 꼴: <em>Gib! Nimm! Befiehl!</em>",
+            "주의: <em>sein</em>의 단수 명령은 <em>Sei!</em>",
+            "복수: 현재 <em>ihr</em>형에서 대명사를 뺌. <em>du</em>로 부르는 둘 이상(가족, 친구)에게: <em>Kommt! Fahrt! Esst! Nehmt! Redet!</em>",
+            "존칭: 현재 복수 <em>sie</em>형 + <em>Sie</em>. <em>Sie</em>로 부르는 한 사람이나 여러 사람(모르는 사람, 윗사람)에게: <em>Kommen Sie! Fahren Sie! Essen Sie! Reden Sie!</em>",
+            "<em>wir</em> 명령: 현재 <em>wir</em>형 + <em>wir</em>. 말하는 사람을 포함한 무리에게 제안: <em>Gehen wir! Fahren wir! Essen wir! Reden wir!</em>"
+          ],
+          "item_p": [
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "5쪽 · 왼쪽 단",
+          "items": [
+            "명령·요구: 엄하거나 무례하게 들릴 수 있음. 주로 빨리 행동해야 할 때: <em>Lass das! Das tut mir weh.</em> · <em>Passen Sie auf! Da kommt ein Auto.</em>",
+            "부탁: 흔히 <em>bitte</em>를 더해 더 친절하게. <em>doch bitte</em>는 말을 더 강하게 함: <em>Bring mir (doch) bitte etwas Wasser!</em> · <em>Ich habe das Protokoll vergessen. Holen Sie es (doch) bitte aus meinem Büro!</em>",
+            "제안: <em>mal</em>이나 <em>doch mal</em>과 함께 쓰면 상대가 받아들이거나 거절할 수 있는 가벼운 제안: <em>Ruft mich (doch) mal an!</em> · <em>Telefonieren wir (doch) mal!</em>",
+            "좋은 바람: <em>Genießt den Urlaub! Bleib (bitte) gesund!</em>"
+          ],
+          "item_p": [
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "<em>lassen</em> 제안과 원형 명령 (참고 상자)",
+          "p": "5쪽 · 왼쪽 단",
+          "items": [
+            "말하는 사람도 포함하는 제안은 <em>lassen</em>으로도 나타냄. 공식: <em>lass/lasst/lassen Sie</em> + <em>uns</em> + 원형: <em>Lass(t) uns gehen/fahren/essen/reden!</em> · <em>Lassen Sie uns gehen/fahren/essen/reden!</em>",
+            "일반적인 요구(주로 표지판)에는 원형을 씀: <em>Baustelle nicht betreten! Bitte nicht stören! Nicht öffnen! Einfahrt freihalten!</em>"
+          ],
+          "item_p": [
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "어순 (동사 자리 표)",
+          "p": "3쪽 · 가운데·오른쪽 단",
+          "items": [
+            "명령법은 현재에만 있음. 동사가 1번째 자리: <em>Seien Sie vorsichtig! Esst mehr Obst!</em>",
+            "분리동사는 본동사가 1번째, 전철은 끝: <em>Kommen Sie doch bitte herein!</em> · <em>Schreibt diesen Satz nicht auf!</em>",
+            "화법조동사로는 명령법을 만들지 않음. 본동사 1번째, 원형은 끝: <em>Lass ihn zu uns kommen!</em>"
+          ],
+          "item_p": [
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "partizip2": {
+      "src": "2쪽 · 왼쪽 단",
+      "p": "2쪽 · 왼쪽 단",
+      "blocks": [
+        {
+          "h": "쓰임",
+          "p": "2쪽 · 왼쪽 단",
+          "items": [
+            "3번째 기본형. <em>Partizip Perfekt</em>라고도 함. 현재완료, 과거완료, 미래완료, 수동태, K I 과거, K II 과거를 만들 때 필요"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "2쪽 · 왼쪽 단",
+          "items": [
+            "강변화 동사: <em>ge-</em> + 완료 어간(<em>Perfektstamm</em>) + <em>-en</em>: <em>sehen: gesehen</em> · <em>kommen: gekommen</em>",
+            "약변화 동사와 혼합 동사: <em>ge-</em> + 완료 어간 + <em>-(e)t</em>: <em>kaufen: gekauft</em> · <em>bringen: gebracht</em>",
+            "혼합 동사는 강변화처럼 어간 모음이 바뀌지만, 과거에서는 약변화 어미를 붙이고 과거분사도 약변화처럼 만듦"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "특이점",
+          "p": "2쪽 · 왼쪽 단",
+          "items": [
+            "분리 전철 동사: <em>ge-</em>가 전철과 어간 사이에 들어감: <em>angereist, eingeladen, ferngesehen, zugehört …</em>",
+            "비분리 전철 동사: <em>ge-</em>가 없음: <em>besucht, entschieden, verkauft, zerrissen …</em>",
+            "<em>-ieren</em> 동사도 <em>ge-</em>가 없음: <em>diskutiert, probiert, qualifiziert, studiert …</em>"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단"
+          ]
+        }
+      ]
+    },
+    "passiv_vorgang": {
+      "src": "4쪽 · 가운데·오른쪽 단",
+      "p": "4쪽 · 가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "능동과 수동",
+          "p": "4쪽 · 가운데·오른쪽 단",
+          "items": [
+            "능동문에서는 행동하는 사람이나 사물이 주어: <em>Eine Pizzeria liefert uns das Essen.</em> · <em>Papa hat heute die Blumen gegossen.</em>",
+            "수동문은 행위나 과정을 강조. 누가 했는지는 중요하지 않거나, 모르거나, 밝히고 싶지 않음: <em>Das Essen wird uns geliefert.</em> · <em>Die Blumen sind heute gegossen worden.</em>",
+            "행위자는 <em>von</em> + 3격으로 밝힐 수 있음: <em>Das Essen wird uns von einer Pizzeria geliefert.</em> · <em>Die Blumen sind heute von Papa gegossen worden.</em>",
+            "모든 타동사(4격 목적어가 있는 동사)로 수동문을 만듦. 능동문의 4격 목적어가 수동문의 주어: <em>Herr Strom repariert bald den Computer.</em> → <em>Der Computer wird bald (von Herrn Strom) repariert.</em>",
+            "일부 자동사로도 수동문을 만듦. 그때 <em>es</em>가 주어로 1번째 자리: <em>Es wird hier nicht geduscht.</em> · <em>Es wird sonntags nicht gearbeitet.</em> · <em>Es wird heute noch allen Kunden geantwortet!</em>",
+            "장소·시간 표현이나 3격 목적어가 1번째 자리에 오면 <em>es</em>가 없음. 주어 없는 수동문: <em>Hier wird nicht geduscht.</em> · <em>Sonntags wird nicht gearbeitet.</em> · <em>Allen Kunden wird heute noch geantwortet!</em>",
+            "수동은 두 가지: 동작수동(<em>werden</em>-수동)과 상태수동(<em>sein</em>-수동)"
+          ],
+          "item_p": [
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 가운데 단",
+            "4쪽 · 오른쪽 단",
+            "4쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "4쪽 · 오른쪽 단",
+          "items": [
+            "<em>werden</em> + 과거분사. 모든 시제와 법에 씀: <em>Die Torte wird gegessen. Die Torte wurde gegessen. Die Torte wäre gegessen worden. Die Torte wird gegessen worden sein.</em>",
+            "화법조동사와 함께: 화법조동사 + 과거분사 + <em>werden</em>의 원형: <em>Der Täter muss bestraft werden.</em>",
+            "합성 시제에서는 화법조동사가 원형. 순서는 조동사 + 과거분사 + <em>werden</em> + 화법조동사 원형: <em>Der Täter hat bestraft werden müssen.</em> · <em>Der Täter wird bestraft werden müssen.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 오른쪽 단",
+            "4쪽 · 오른쪽 단",
+            "4쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "4쪽 · 오른쪽 단",
+          "items": [
+            "신문 기사, 관청 말, 사실을 적는 글에서 자주: <em>Bei der Demonstration wurde eine Person verhaftet.</em> · <em>Es wurde festgestellt, dass das Projekt nicht realisiert werden kann.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "수동 대신 (<em>Alternative zum Passiv</em>)",
+          "p": "4쪽 · 오른쪽 단",
+          "items": [
+            "<em>man</em>을 주어로 한 능동문: <em>Hier wird ein neuer Kindergarten gebaut.</em> → <em>Man baut hier einen neuen Kindergarten.</em>",
+            "<em>müssen</em> 수동문은 가끔 <em>gehören</em> + 과거분사나 <em>sein</em> + <em>zu</em> 원형으로 바꿈: <em>Diese Tat muss bestraft werden.</em> → <em>Diese Tat gehört bestraft.</em> → <em>Diese Tat ist zu bestrafen.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 오른쪽 단",
+            "4쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "passiv_zustand": {
+      "src": "4쪽 · 오른쪽 단",
+      "p": "4쪽 · 오른쪽 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "4쪽 · 오른쪽 단",
+          "items": [
+            "<em>sein</em> + 과거분사: <em>Deine Jeans sind jetzt gewaschen.</em> · <em>Die Koffer waren schon gepackt.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "쓰임",
+          "p": "4쪽 · 오른쪽 단",
+          "items": [
+            "주로 현재나 과거로 씀. 과정이 아니라 행위의 결과를 강조: <em>Der Antrag ist abgewiesen.</em> · <em>Die Tür war immer abgeschlossen.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "passiv_bekommen": {
+      "src": "4쪽 · 오른쪽 단",
+      "p": "4쪽 · 오른쪽 단",
+      "blocks": [
+        {
+          "h": "만들기 (공식 박스)",
+          "p": "4쪽 · 오른쪽 단",
+          "items": [
+            "말할 때 4격과 3격 목적어를 함께 갖는 일부 동사(<em>schenken, bringen</em> 등)로 씀. 능동문의 3격 목적어가 주어가 되고, 4격 목적어는 그대로 4격",
+            "<em>bekommen</em> + 과거분사, 행위자는 <em>von</em> + 3격: 능동 <em>Ich bringe meinem Vater die Zeitung. Kai schenkte mir einen Ring.</em> → 수동 <em>Mein Vater bekommt von mir die Zeitung gebracht. Ich bekam von Kai einen Ring geschenkt.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 오른쪽 단",
+            "4쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "<em>kriegen</em> (참고 상자)",
+          "p": "4쪽 · 오른쪽 단",
+          "items": [
+            "입말에서는 <em>bekommen</em> 대신 <em>kriegen</em>도 자주 씀: <em>Ich habe einen Teddy geschenkt gekriegt.</em> · <em>Tanja kriegt das gestohlene Fahrrad von der Versicherung ersetzt.</em>"
+          ],
+          "item_p": [
+            "4쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    }
+  },
+  "pons_zeiten_extra": {
+    "stem_view": {
+      "title": "어간 + 어미로 본 활용 (공식 박스 모음)",
+      "src": "1쪽 · 왼쪽 단 / 2쪽 · 왼쪽·가운데·오른쪽 단 / 3쪽 · 왼쪽 단 / 4쪽 · 왼쪽·오른쪽 단 / 5쪽 · 왼쪽·가운데·오른쪽 단",
+      "p": "1쪽 · 왼쪽 단 / 2쪽 · 왼쪽·가운데·오른쪽 단 / 3쪽 · 왼쪽 단 / 4쪽 · 왼쪽·오른쪽 단 / 5쪽 · 왼쪽·가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "현재 어간 (<em>Präsensstamm</em> = 원형 − <em>-(e)n</em>)",
+          "p": "1쪽 · 왼쪽 단 / 3쪽 · 왼쪽 단 / 5쪽 · 왼쪽·가운데 단",
+          "items": [
+            "+ 현재 인칭 어미 <em>-e, -st, -t, -en, -t, -en</em> → 현재: <em>ich komm-e, du komm-st …</em>",
+            "+ <em>-t-</em> + 인칭 어미 <em>-e, -est, -e, -en, -et, -en</em> → 과거 (약변화): <em>ich lebte, du lebtest …</em>",
+            "+ <em>-e/-est/-e/-en/-et/-en</em> → 접속법 1식 현재: <em>man befürchte</em>",
+            "그대로 → 명령법 단수: <em>Komm! Fahr! Lass!</em>"
+          ],
+          "item_p": [
+            "1쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단",
+            "5쪽 · 가운데 단",
+            "5쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "과거 어간 (<em>Präteritumstamm</em> = 과거 <em>ich</em>형)",
+          "p": "3쪽 · 왼쪽 단 / 5쪽 · 가운데·오른쪽 단",
+          "items": [
+            "+ 인칭 어미 <em>–, -st, –, -en, -t, -en</em> → 과거 (강변화): <em>ich fuhr, du fuhrst …</em>",
+            "+ <em>-t-</em> + 인칭 어미 <em>-e, -est, -e, -en, -et, -en</em> → 과거 (혼합 동사): <em>ich brachte, du brachtest …</em>",
+            "+ <em>-e, -est, -e, -en, -et, -en</em> → 접속법 2식 현재 (많은 강변화 동사는 <em>a, o, u → ä, ö, ü</em>): <em>ich käme, ich nähme</em>",
+            "규칙동사의 접속법 2식은 과거와 꼴이 같아서 보통 <em>würde</em> + 원형으로 대신함"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 왼쪽 단",
+            "5쪽 · 가운데·오른쪽 단",
+            "5쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "완료 어간 (<em>Perfektstamm</em> = 과거분사 속 어간)",
+          "p": "2쪽 · 왼쪽 단",
+          "items": [
+            "<em>ge-</em> + 완료 어간 + <em>-en</em> → 과거분사 (강변화): <em>gesehen, gekommen</em>",
+            "<em>ge-</em> + 완료 어간 + <em>-(e)t</em> → 과거분사 (약변화·혼합 동사): <em>gekauft, gebracht</em>"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "표가 직접 밝힌 어미의 관계",
+          "p": "3쪽 · 왼쪽 단 / 5쪽 · 가운데 단",
+          "items": [
+            "강변화 과거 어미: <em>ich</em>형과 <em>er/sie/es</em>형은 어미가 없고, 나머지는 현재 어미와 같음",
+            "접속법 2식의 인칭 어미는 접속법 1식과 같음 (<em>Die Personenendungen sind also dieselben wie im K I.</em>)"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단",
+            "5쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "조동사 + 과거분사 또는 원형 (합성형)",
+          "p": "2쪽 · 가운데·오른쪽 단 / 4쪽 · 왼쪽·오른쪽 단 / 5쪽 · 가운데·오른쪽 단",
+          "items": [
+            "현재완료 = <em>haben/sein</em> 현재 + 과거분사 · 과거완료 = <em>haben/sein</em> 과거 + 과거분사",
+            "미래 = <em>werden</em> 현재형 + 원형 · 미래완료 = <em>werden</em> 현재형 + 과거분사 + <em>haben/sein</em> 원형",
+            "K I 과거 = <em>haben/sein</em> K I + 과거분사 · K I 미래 = <em>werden</em> K I + 원형",
+            "K II 과거 = <em>haben/sein</em> K II + 과거분사 · <em>würde</em>형 = <em>werden</em> K II + 원형",
+            "동작수동 = <em>werden</em> + 과거분사 · 상태수동 = <em>sein</em> + 과거분사 · <em>bekommen</em> 수동 = <em>bekommen</em> + 과거분사"
+          ],
+          "item_p": [
+            "2쪽 · 가운데·오른쪽 단",
+            "4쪽 · 왼쪽 단",
+            "5쪽 · 가운데 단",
+            "5쪽 · 오른쪽 단",
+            "4쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "stammformen": {
+      "title": "세 기본형, 어간, 어간 모음",
+      "src": "2쪽 · 왼쪽 단",
+      "p": "2쪽 · 왼쪽 단",
+      "blocks": [
+        {
+          "h": "세 기본형 (<em>Stammformen</em>)",
+          "p": "2쪽 · 왼쪽 단",
+          "items": [
+            "동사마다 기본형이 셋 있고, 이것으로 동사가 어떻게 활용하는지 알 수 있음: 1번째 원형(사전 표제어), 2번째 과거 <em>ich</em>형, 3번째 과거분사",
+            "기본형마다 어간이 있음: 원형에는 현재형을 만드는 현재 어간(<em>Präsensstamm</em>), 과거 <em>ich</em>형에는 과거형을 만드는 과거 어간(<em>Präteritumstamm</em>), 과거분사에는 완료 어간(<em>Perfektstamm</em>)",
+            "어간마다 모음(또는 이중모음)이 하나 있고, 이를 어간 모음(<em>Stammvokal</em>)이라 부름"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "약변화와 강변화",
+          "p": "2쪽 · 왼쪽 단",
+          "items": [
+            "약변화(= 규칙) 동사는 세 기본형에서 어간과 어간 모음이 그대로: <em>atmen, spielen, wohnen</em> / <em>ich atmete, ich spielte, ich wohnte</em> / <em>geatmet, gespielt, gewohnt</em>",
+            "강변화(= 불규칙) 동사는 어간 모음이, 때로는 어간 전체가 바뀜: <em>bleiben, finden, gehen</em> / <em>ich blieb, ich fand, ich ging</em> / <em>geblieben, gefunden, gegangen</em>",
+            "강변화 동사의 과거 <em>ich</em>형은 어미가 없어서 과거 어간과 같음"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단",
+            "2쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "외우는 법 (참고 상자)",
+          "p": "2쪽 · 왼쪽 단",
+          "items": [
+            "동사마다 세 기본형과 함께 현재 <em>du</em>형도 외울 것. 일부 강변화 동사는 현재 <em>du</em>형·<em>er/sie/es</em>형에서 모음이 바뀌기 때문: <em>sagen, du sagst, ich sagte, gesagt</em> · <em>kommen, du kommst, ich kam, gekommen</em> · <em>treffen, du triffst, ich traf, getroffen</em>"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단"
+          ]
+        }
+      ]
+    },
+    "tense_overview": {
+      "title": "시제 한눈에 (지금 · 과거 · 미래)",
+      "src": "1쪽 · 왼쪽·오른쪽 단 / 2쪽 · 가운데 단 / 4쪽 · 왼쪽·가운데 단",
+      "p": "1쪽 · 왼쪽·오른쪽 단 / 2쪽 · 가운데 단 / 4쪽 · 왼쪽·가운데 단",
+      "blocks": [
+        {
+          "h": "지금 · 과거 · 미래의 시제",
+          "p": "1쪽 · 왼쪽·오른쪽 단 / 2쪽 · 가운데 단 / 4쪽 · 왼쪽·가운데 단",
+          "items": [
+            "지금(<em>Tempus der Gegenwart</em>): 시제는 하나, 현재(<em>Präsens</em>)",
+            "과거(<em>Tempus der Vergangenheit</em>): 셋. 과거(<em>Präteritum</em>), 그리고 합성형인 현재완료(<em>Perfekt</em>)와 과거완료(<em>Plusquamperfekt</em>)",
+            "미래(<em>Tempus der Zukunft</em>): 둘. 미래(<em>Futur I</em>)와 미래완료(<em>Futur II</em>). 둘 다 미래를 나타낼 수 있고 다른 기능도 있음",
+            "현재는 시간 표현과 함께 과거·미래도 나타내고, 미래는 짐작·약속처럼 양태 뜻이 중요할 때가 많고, 미래완료는 지난 일의 짐작에도 씀"
+          ],
+          "item_p": [
+            "1쪽 · 왼쪽 단",
+            "2쪽 · 가운데 단",
+            "4쪽 · 왼쪽 단",
+            "1쪽 · 오른쪽 단 / 4쪽 · 왼쪽·가운데 단"
+          ]
+        }
+      ]
+    },
+    "modus_overview": {
+      "title": "법 한눈에 (직설법 · 접속법 · 명령법)",
+      "src": "5쪽 · 왼쪽·가운데 단",
+      "p": "5쪽 · 왼쪽·가운데 단",
+      "blocks": [
+        {
+          "h": "세 가지 법",
+          "p": "5쪽 · 왼쪽·가운데 단",
+          "items": [
+            "법(<em>Modus</em>)은 말이 현실인지 가상인지, 바람인지, 자기 생각인지 남의 생각인지를 나타냄",
+            "직설법(<em>Indikativ</em>, 현실의 꼴), 접속법(<em>Konjunktiv</em>, 가능성의 꼴), 명령법(<em>Imperativ</em>, 명령의 꼴)",
+            "접속법은 1식(K I)과 2식(K II). K I은 간접화법, K II는 현실이 아닌 일과 공손한 말"
+          ],
+          "item_p": [
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 왼쪽 단",
+            "5쪽 · 가운데 단"
+          ]
+        }
+      ]
+    },
+    "hilfsverben": {
+      "title": "조동사 sein · haben · werden 활용표",
+      "src": "1쪽 · 왼쪽 단 / 3쪽 · 왼쪽 단 / 5쪽 · 가운데·오른쪽 단",
+      "p": "1쪽 · 왼쪽 단 / 3쪽 · 왼쪽 단 / 5쪽 · 가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "현재 (일부는 다른 어간으로 만듦)",
+          "p": "1쪽 · 왼쪽 단",
+          "items": [
+            "<em>sein</em>: <em>bin, bist, ist, sind, seid, sind</em> · <em>haben</em>: <em>habe, hast, hat, haben, habt, haben</em> · <em>werden</em>: <em>werde, wirst, wird, werden, werdet, werden</em>",
+            "참고 상자: <em>seid</em>(<em>sein</em>)와 전치사·접속사 <em>seit</em>를 헷갈리지 말 것: <em>Seit dieser Nachricht seid ihr so aufgeregt.</em>"
+          ],
+          "item_p": [
+            "1쪽 · 왼쪽 단",
+            "1쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "과거",
+          "p": "3쪽 · 왼쪽 단",
+          "items": [
+            "<em>sein</em>: <em>war, warst, war, waren, wart, waren</em> · <em>haben</em>: <em>hatte, hattest, hatte, hatten, hattet, hatten</em> · <em>werden</em>: <em>wurde, wurdest, wurde, wurden, wurdet, wurden</em>"
+          ],
+          "item_p": [
+            "3쪽 · 왼쪽 단"
+          ]
+        },
+        {
+          "h": "접속법 1식",
+          "p": "5쪽 · 가운데 단",
+          "items": [
+            "<em>sein</em>: <em>sei, sei(e)st, sei, seien, seiet, seien</em> · <em>haben</em>: <em>habe, habest, habe, haben, habet, haben</em> · <em>werden</em>: <em>werde, werdest, werde, werden, werdet, werden</em>"
+          ],
+          "item_p": [
+            "5쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "접속법 2식",
+          "p": "5쪽 · 오른쪽 단",
+          "items": [
+            "<em>sein</em>: <em>wäre, wär(e)st, wäre, wären, wär(e)t, wären</em> · <em>haben</em>: <em>hätte, hättest, hätte, hätten, hättet, hätten</em> · <em>werden</em>: <em>würde, würdest, würde, würden, würdet, würden</em>"
+          ],
+          "item_p": [
+            "5쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "modalverben": {
+      "title": "화법조동사",
+      "src": "1쪽 · 가운데 단 / 2쪽 · 가운데 단 / 3쪽 · 왼쪽·가운데·오른쪽 단 / 4쪽 · 오른쪽 단 / 5쪽 · 오른쪽 단",
+      "p": "1쪽 · 가운데 단 / 2쪽 · 가운데 단 / 3쪽 · 왼쪽·가운데·오른쪽 단 / 4쪽 · 오른쪽 단 / 5쪽 · 오른쪽 단",
+      "blocks": [
+        {
+          "h": "현재",
+          "p": "1쪽 · 가운데 단",
+          "items": [
+            "화법조동사는 강변화 동사에 속함. 단수에서 모음이 바뀌고(<em>sollen</em>은 빼고), <em>ich</em>형과 <em>er/sie/es</em>형은 어미가 없음",
+            "<em>können</em>: <em>kann, kannst, kann, können, könnt, können</em> · <em>müssen</em>: <em>muss, musst, muss, müssen, müsst, müssen</em> · <em>dürfen</em>: <em>darf, darfst, darf, dürfen, dürft, dürfen</em>",
+            "<em>wollen</em>: <em>will, willst, will, wollen, wollt, wollen</em> · <em>sollen</em>: <em>soll, sollst, soll, sollen, sollt, sollen</em> · <em>mögen</em>: <em>mag, magst, mag, mögen, mögt, mögen</em>"
+          ],
+          "item_p": [
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "다른 쪽에 나오는 화법조동사 규칙",
+          "p": "2쪽 · 가운데 단 / 3쪽 · 왼쪽·가운데·오른쪽 단 / 4쪽 · 오른쪽 단 / 5쪽 · 오른쪽 단",
+          "items": [
+            "현재완료는 모두 <em>haben</em>: <em>Das habe ich nicht gewollt.</em> · <em>Ich habe etwas erledigen müssen.</em>",
+            "말할 때도 현재완료보다 과거를 더 자주 씀: <em>Martin musste/wollte/konnte/sollte/durfte noch einkaufen.</em>",
+            "다른 동사의 원형과 함께 합성 시제가 되면 이중 원형: <em>Ich habe/hatte dich nicht sehen können.</em>",
+            "수동태와 함께: <em>Der Täter muss bestraft werden.</em> · <em>Der Täter hat bestraft werden müssen.</em>",
+            "K II는 <em>würde</em>로 바꾸지 않음: <em>Ich könnte/wollte/dürfte/möchte/sollte/müsste heute früher nach Hause gehen.</em>"
+          ],
+          "item_p": [
+            "2쪽 · 가운데 단",
+            "3쪽 · 왼쪽 단",
+            "3쪽 · 가운데·오른쪽 단",
+            "4쪽 · 오른쪽 단",
+            "5쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "praefixe": {
+      "title": "전철이 있는 동사 (분리 · 비분리 · 뜻에 따라)",
+      "src": "1쪽 · 가운데·오른쪽 단 / 2쪽 · 왼쪽 단 / 3쪽 · 가운데·오른쪽 단",
+      "p": "1쪽 · 가운데·오른쪽 단 / 2쪽 · 왼쪽 단 / 3쪽 · 가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "비분리 전철 (공식 박스)",
+          "p": "1쪽 · 가운데 단",
+          "items": [
+            "현재뿐 아니라 모든 시제에서 본동사와 붙어 있음. 말할 때 전철이 아니라 본동사에 강세: <em>be-, emp-, ent-, er-, ge-, miss-, ver-, zer-</em>",
+            "<em>Lara besucht ihre alte Schule.</em> · <em>Ich erzähle dir alles, denn ich vertraue dir vollkommen.</em>"
+          ],
+          "item_p": [
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "분리 전철 (공식 박스)",
+          "p": "1쪽 · 가운데 단",
+          "items": [
+            "현재와 과거에서 조동사나 화법조동사가 따로 없으면 떨어짐. 말할 때 전철에 강세, 전철은 문장 끝: <em>ab-, an-, auf-, aus-, bei-, ein-, fest-, fort-, her-, hin-, los-, mit-, vor-, weg-, zu-, zurück-, zusammen- …</em>",
+            "<em>Anne kauft Lebensmittel nur im Bioladen ein.</em> / <em>Anne muss heute Brot einkaufen.</em> · <em>Ich komme auf Ihr Angebot zurück.</em> / <em>Ich mag gerne auf Ihr Angebot zurückkommen.</em>"
+          ],
+          "item_p": [
+            "1쪽 · 가운데 단",
+            "1쪽 · 가운데 단"
+          ]
+        },
+        {
+          "h": "뜻에 따라 분리·비분리 (공식 박스)",
+          "p": "1쪽 · 오른쪽 단",
+          "items": [
+            "<em>durch-, hinter-, über-, um-, unter-, voll-, wider-, wieder-</em>",
+            "<em>umfahren</em>(분리, 들이받아 넘어뜨리다): <em>Achtung, fahr das Stopp-Schild nicht um!</em> · <em>umfahren</em>(비분리, 돌아서 가다): <em>Bitte umfahren Sie das Stadtzentrum.</em>"
+          ],
+          "item_p": [
+            "1쪽 · 오른쪽 단",
+            "1쪽 · 오른쪽 단"
+          ]
+        },
+        {
+          "h": "다른 쪽에 나오는 전철 규칙",
+          "p": "2쪽 · 왼쪽 단 / 3쪽 · 가운데·오른쪽 단",
+          "items": [
+            "과거분사: 분리 전철은 <em>ge-</em>가 전철과 어간 사이 (<em>angereist</em>), 비분리 전철은 <em>ge-</em> 없음 (<em>besucht</em>)",
+            "어순: 주문장에서 본동사 2번째, 전철 끝 (<em>Wir stehen immer früh auf.</em>), 부문장에서는 붙어서 끝 (<em>…, wenn die Hausbesitzer einkaufen.</em>)"
+          ],
+          "item_p": [
+            "2쪽 · 왼쪽 단",
+            "3쪽 · 가운데·오른쪽 단"
+          ]
+        }
+      ]
+    },
+    "satzstellung": {
+      "title": "문장 속 동사 자리 (표와 현재완료·과거완료의 특이점)",
+      "src": "2쪽 · 오른쪽 단 / 3쪽 · 가운데·오른쪽 단",
+      "p": "2쪽 · 오른쪽 단 / 3쪽 · 가운데·오른쪽 단",
+      "blocks": [
+        {
+          "h": "기본 규칙",
+          "p": "3쪽 · 가운데·오른쪽 단",
+          "items": [
+            "술어(<em>Prädikat</em>)는 동사 하나, 여러 부분으로 된 동사, 또는 여러 동사로 이루어짐. 주문장과 부문장에서 동사 자리는 둘: 2번째 자리와/또는 마지막 자리. 의문사 없는 의문문과 명령법에서는 동사가 1번째 자리"
+          ],
+          "item_p": [
+            "3쪽 · 가운데·오른쪽 단"
+          ]
+        },
+        {
+          "h": "동사 하나 (<em>Prädikat mit einfachem Verb</em>)",
+          "p": "3쪽 · 가운데·오른쪽 단",
+          "items": [
+            "주문장·의문사 의문문: 현재·과거는 동사가 2번째 (<em>Goethe kommt/kam aus Frankfurt.</em> · <em>Woher kommt/kam Goethe?</em>). 현재완료·과거완료·미래는 조동사가 2번째, 과거분사·원형은 끝 (<em>Goethe hat/hatte au[ch] in Weimar gelebt.</em> · <em>Goethe wird keine Bücher mehr schreiben.</em> · <em>Wann ist Goethe nach Italien gereist?</em>)",
+            "부문장: 동사가 끝 (<em>Man spricht von Mobbing, wenn Gruppen eine Person attackieren, die von ihrer Norm abweicht.</em>). 합성 시제는 조동사가 끝, 과거분사·원형은 조동사 앞 (<em>Mobbing wurde ein wichtiges Thema, weil immer mehr Betroffene davon berichtet haben/hatten.</em> · <em>Mediziner warnen, dass immer mehr Menschen durch Mobbing erkranken werden.</em>)",
+            "의문사 없는 의문문: 동사가 1번째 (<em>Verleiht man den Nobelpreis jährlich?</em>). 합성 시제는 조동사가 1번째, 과거분사·원형은 끝 (<em>Hat/Hatte Mme. Curie den Nobelpreis bekommen?</em> · <em>Werden auch Pädagogen den Preis bekommen?</em>)"
+          ],
+          "item_p": [
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단"
+          ]
+        },
+        {
+          "h": "분리동사 (<em>Prädikat mit trennbarem Verb</em>)",
+          "p": "3쪽 · 가운데·오른쪽 단",
+          "items": [
+            "주문장·의문사 의문문: 본동사 2번째, 전철 끝 (<em>Wir stehen/standen immer früh auf.</em> · <em>Warum stehen/standen wir immer früh auf?</em>). 합성 시제: <em>Wir sind/waren gestern früh aufgestanden.</em> · <em>Morgen werden wir nicht früh aufstehen.</em> · <em>Warum sind wir nicht später aufgestanden?</em>",
+            "부문장: 동사가 붙어서 끝 (<em>Einbrecher kommen oft samstags, wenn die Hausbesitzer einkaufen.</em>). 합성 시제: <em>Versicherungen zahlen bei Diebstahl nur, wenn der Besitzer die Haustür abgeschlossen hat/hatte.</em> · <em>Ich weiß, dass mein Agent bald anrufen wird.</em>",
+            "의문사 없는 의문문: 본동사 1번째, 전철 끝 (<em>Nehmen/Nahmen Sie auch an dem Seminar teil?</em>). 합성 시제: <em>Sind/Waren die Teilnehmer schon angereist?</em> · <em>Werden Sie sich auch nächstes Jahr anmelden?</em>"
+          ],
+          "item_p": [
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단"
+          ]
+        },
+        {
+          "h": "여러 동사 (<em>Prädikat mit mehreren Verben</em>: 화법조동사 + 원형 또는 본동사 + 원형)",
+          "p": "3쪽 · 가운데·오른쪽 단",
+          "items": [
+            "주문장·의문사 의문문: 화법조동사나 본동사가 2번째, 원형은 끝 (<em>Hier müssen/mussten wir leise reden.</em> · <em>Unsere Kinder gehen/gingen nicht gern spazieren.</em>). 합성 시제는 조동사가 2번째, 끝에 이중 원형 또는 원형 + 과거분사 (<em>Ich habe/hatte dich nicht sehen können.</em> · <em>Karin wird leider zum Arzt gehen müssen.</em> · <em>Kurt ist gestern spazieren gegangen.</em>)",
+            "부문장: 원형이 화법조동사·본동사 앞, 맨 끝 (<em>Ich kann dich nicht abholen, weil ich das Auto in die Werkstatt bringen muss/musste.</em> · <em>Ich weiß nicht, ob ich das Auto noch einmal reparieren lasse.</em>). 합성 시제는 조동사가 이중 원형 앞 (<em>Er kam nach Deutschland, weil er hier hat/hatte arbeiten wollen.</em> · <em>Er ist in seine Heimat zur[ückg]ekehrt, als er dort bessere Zeiten hat/hatte [ko]mmen sehen.</em> · <em>Ich weiß nicht, ob er seine [To]chter zum Konzert wird gehen lassen.</em>)",
+            "의문사 없는 의문문: 1번째, 원형은 끝 (<em>Darf/Durfte ich dir diese Frage stellen?</em> · <em>Hörst du den Wind rauschen?</em>). 합성 시제는 조동사 1번째, 이중 원형은 끝 (<em>Hast/Hattest du jetzt schon deinen Sommerurlaub buchen müssen?</em> · <em>Hast/Hattest du mich kommen hören?</em> · <em>Wird er uns zuschauen lassen?</em>)"
+          ],
+          "item_p": [
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단"
+          ]
+        },
+        {
+          "h": "이중 원형 (<em>Anmerkung</em>)",
+          "p": "3쪽 · 가운데·오른쪽 단",
+          "items": [
+            "화법조동사 말고 이중 원형을 만드는 동사는 다음뿐",
+            "<em>lassen</em>: <em>Wir lassen die Kinder spielen.</em> → <em>Wir haben die Kinder spielen lassen.</em>",
+            "<em>brauchen</em>: 원형과 함께면 부정문에서만: <em>Du brauchst nicht (zu) kommen.</em> → <em>Du hast nicht (zu) kommen brauchen.</em>",
+            "<em>sehen, hören, fühlen, spüren</em>: 4격 목적어 + 원형과 함께 쓰고, 합성 시제에서는 원형으로: <em>Ich sehe ein Unglück kommen.</em> → <em>Ich habe ein Unglück kommen sehen.</em>"
+          ],
+          "item_p": [
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단",
+            "3쪽 · 가운데·오른쪽 단"
+          ]
+        },
+        {
+          "h": "현재완료·과거완료의 특이점",
+          "p": "2쪽 · 오른쪽 단",
+          "items": [
+            "술어에 본동사가 둘이거나 본동사와 화법조동사가 있으면 조동사만 인칭 변화하고, 본동사와 화법조동사는 원형",
+            "주문장: 조동사 2번째, 나머지 동사는 끝: <em>Leider habe/hatte ich gestern nicht kommen können.</em> · <em>Ich habe/hatte gestern spazieren gehen wollen, doch dann kam das Gewitter.</em>",
+            "부문장: 모든 동사가 끝에 모이고, 인칭 변화한 조동사는 원형들 앞: <em>Obwohl er seine Eltern hat/hatte besuchen wollen, musste er wegen einer Grippe zu Hause bleiben.</em> · <em>Da der Hausbesitzer ihn nicht hatte kommen hören, gelangte der Einbrecher ungestört ins Haus.</em>"
+          ],
+          "item_p": [
+            "2쪽 · 오른쪽 단",
+            "2쪽 · 오른쪽 단",
+            "2쪽 · 오른쪽 단"
+          ]
+        }
+      ]
+    }
+  },
+  "crosscheck_grammatik_sheet": [
+    {
+      "topic": "어간 이름",
+      "zeiten": "<em>Präsensstamm</em> · <em>Präteritumstamm</em> · <em>Perfektstamm</em> (2쪽 왼쪽 단)",
+      "grammatik": "<em>Verbstamm</em> · <em>Infinitivstamm</em> · <em>Präteritumstamm</em> (3장)",
+      "verdict": "같은 것을 다르게 부름. Zeiten의 현재 어간 = Grammatik의 원형 어간. 사이트에서는 '현재 어간'으로 통일"
+    },
+    {
+      "topic": "접속법 1식·2식 만들기",
+      "zeiten": "K I = 현재 어간 + <em>-e/-est/-e/-en/-et/-en</em>, K II = 과거 어간 + 같은 어미 (5쪽)",
+      "grammatik": "K I = 원형 어간 + 접속법 어미, K II = 과거 어간 + K I 어미 (3장)",
+      "verdict": "일치. Zeiten은 어미를 하나하나 적고 'K I과 같다'고 직접 밝힘"
+    },
+    {
+      "topic": "e 넣기 (<em>e-Einschub</em>)",
+      "zeiten": "<em>du</em>형·<em>ihr</em>형만 말함: <em>du arbeitest – ihr arbeitet</em> (1쪽 왼쪽 단)",
+      "grammatik": "<em>du arbeitest, er arbeitet, ihr arbeitet</em> (3장 왼쪽 단)",
+      "verdict": "<em>er/sie/es</em>형에도 e가 들어감(<em>er arbeitet</em>). Grammatik 쪽이 빠짐없음"
+    },
+    {
+      "topic": "명령법 단수",
+      "zeiten": "현재 어간 (<em>Fahr! Lauf! Schlaf!</em>). <em>e → i</em> 동사만 <em>du</em>형 − <em>-st</em> (<em>Gib! Nimm!</em>) (5쪽 왼쪽 단)",
+      "grammatik": "모든 동사를 '현재 <em>du</em>형에서 <em>-st</em>와 <em>du</em>를 뺌'으로 설명 (3장 오른쪽 단)",
+      "verdict": "Grammatik 규칙을 <em>a → ä</em> 동사에 그대로 쓰면 ✗<em>Fähr!</em>가 나옴. Zeiten 쪽이 정확"
+    },
+    {
+      "topic": "비분리·분리 전철 목록",
+      "zeiten": "비분리 <em>be-, emp-, ent-, er-, ge-, miss-, ver-, zer-</em>. <em>wider-</em>는 '뜻에 따라' 무리. 분리에 <em>fest-, fort-, los-, zurück-, zusammen-</em>이 있고 <em>nach-</em>는 없음 (1쪽)",
+      "grammatik": "비분리에 <em>wider-</em> 포함. 분리 목록에 <em>nach-</em> 있음 (2장 가운데 단)",
+      "verdict": "<em>wider-</em>의 분류가 다름. 사이트에 목록을 쓸 때는 어느 표를 따랐는지 밝힐 것"
+    },
+    {
+      "topic": "혼합 동사",
+      "zeiten": "<em>bringen, brennen, denken, kennen, nennen, rennen, senden</em> (3쪽 왼쪽 단)",
+      "grammatik": "같은 목록 + <em>wissen</em>과 화법조동사 (2장 왼쪽 단)",
+      "verdict": "일치. Grammatik이 더 넓게 묶음"
+    },
+    {
+      "topic": "과거와 현재완료의 쓰임",
+      "zeiten": "과거는 주로 글, 격식 있는 말. 현재완료는 일상의 말과 개인적인 글. <em>sein, haben</em>과 화법조동사는 말에서도 과거",
+      "grammatik": "과거는 주로 글, 말은 현재완료. 조동사·화법조동사는 거의 늘 과거",
+      "verdict": "일치. Zeiten이 '격식 있는 말'과 '개인적인 글'을 더함"
+    },
+    {
+      "topic": "미래완료",
+      "zeiten": "미래보다 먼저, 지난 일의 짐작. 말할 때는 아주 드물고 현재완료로 바꿈 (4쪽)",
+      "grammatik": "드물게 씀. 예측과 짐작 (3장 가운데 단)",
+      "verdict": "어긋나지 않음. Zeiten이 자세함"
+    },
+    {
+      "topic": "접속법 1식 미래",
+      "zeiten": "<em>werden</em>의 K I + 원형. K I이 직설법과 같으면 K II나 <em>würde</em> (일반 규칙)",
+      "grammatik": "1인칭 단수와 복수는 대개 <em>würde(n)</em> (3장 오른쪽 단)",
+      "verdict": "같은 원리. Grammatik이 어느 인칭에서 바뀌는지 직접 적음"
+    },
+    {
+      "topic": "동작수동·상태수동",
+      "zeiten": "동작수동은 모든 시제와 법, 상태수동은 주로 현재·과거 (4쪽)",
+      "grammatik": "동작수동은 모든 시제, 상태수동은 주로 현재·과거 (2장 오른쪽 단)",
+      "verdict": "일치"
+    },
+    {
+      "topic": "접속법 이름",
+      "zeiten": "K I der Gegenwart / Vergangenheit / Zukunft, K II der Gegenwart / Vergangenheit",
+      "grammatik": "Konjunktiv I / I Perfekt / I Futur, Konjunktiv II / II Plusquamperfekt",
+      "verdict": "이름만 다름. 두 파일의 id를 같게 맞춤 (konj1, konj1_perfekt, konj1_futur, konj2, konj2_pqp)"
+    },
+    {
+      "topic": "한쪽에만 있는 것",
+      "zeiten": "Zeiten에만: <em>bekommen</em> 수동, <em>wir</em> 명령, <em>lassen</em> 제안, 원형 명령, 이중 원형, 역사적 현재, 시간 표현, 미래의 관용 표현, 수동 대신 쓰는 말, K I·K II의 수동, K II의 화법조동사",
+      "grammatik": "Grammatik에만: 여섯 시제를 시간 축에 늘어놓은 표, <em>Satzklammer</em>라는 이름, <em>möchte</em> 설명",
+      "verdict": "칸을 채울 때 두 파일을 함께 볼 것"
+    }
+  ],
+  "notes": [
+    "<b>쪽 번호</b>: 이 표는 각 쪽 아래 초록 네모에 쪽 번호(1~5)가 인쇄되어 있어서 '1쪽 · 왼쪽 단'으로 적음. 쪽 번호가 없던 Grammatik 표('1장')와 다름. 3쪽의 「Stellung der Verben im Satz」 표는 가운데·오른쪽 단을 가로질러서 '3쪽 · 가운데·오른쪽 단'으로 적음",
+    "<b>받은 쪽</b>: 사진 5장 = 1~5쪽. 이 시리즈는 보통 6쪽이라 마지막 쪽이 더 있을 수 있음. 저자·연도·ISBN은 받은 쪽에 없음 (예문에 2020년, 2022년이 나와서 그 무렵 판으로 보임)",
+    "<b>반사로 가린 글자</b>: 사진에 빛이 반사되어 안 보이는 글자는 문맥으로 [ ] 안에 채움. 끝까지 읽지 못한 2쪽 오른쪽 단의 <em>Morgen h[…] die Renovierung endlich geschafft.</em>는 넣지 않았음. [ ]가 있는 예문을 사이트에 쓸 때는 실물로 한 번 확인할 것",
+    "<b>칸 id</b>: Grammatik 표 자료(pons-de-tense-notes.json)와 같은 id를 씀. 이 표에만 있는 <em>bekommen</em> 수동은 새 id <code>passiv_bekommen</code>",
+    "<b>어간 모델</b>: 이 표는 '현재 어간 · 과거 어간 · 완료 어간'과 '어미 묶음'을 공식 박스로 직접 보여 줌. 같은 접속법 어미가 현재 어간에 붙으면 K I, 과거 어간에 붙으면 K II. 프랑스어 사이트의 「어간 + 어미」 규칙 상자와 같은 틀로 쓸 수 있음 (<code>stem_view</code>)",
+    "<b>✗ 표시</b>: 5쪽 오른쪽 단의 (Nicht: …)를 ✗로 옮김"
+  ],
+  "glossary": [
+    {
+      "de": "Tempus (Pl. Tempora) · Zeitform",
+      "ko": "시제"
+    },
+    {
+      "de": "Gegenwart · Vergangenheit · Zukunft",
+      "ko": "지금(현재) · 과거 · 미래"
+    },
+    {
+      "de": "Stammform (1./2./3.)",
+      "ko": "기본형 (1번째 원형 · 2번째 과거 ich형 · 3번째 과거분사)"
+    },
+    {
+      "de": "Präsensstamm · Präteritumstamm · Perfektstamm",
+      "ko": "현재 어간 · 과거 어간 · 완료 어간"
+    },
+    {
+      "de": "Stammvokal · Vokalwechsel",
+      "ko": "어간 모음 · 모음 바뀜"
+    },
+    {
+      "de": "Personalendung",
+      "ko": "인칭 어미"
+    },
+    {
+      "de": "schwache / starke Verben · Mischverben",
+      "ko": "약변화(규칙) / 강변화(불규칙) 동사 · 혼합 동사"
+    },
+    {
+      "de": "Hilfsverb · Modalverb · Vollverb · Grundverb",
+      "ko": "조동사 · 화법조동사 · 본동사 · (전철이 붙기 전의) 기본 동사"
+    },
+    {
+      "de": "Präfix (Vorsilbe) · trennbar / untrennbar",
+      "ko": "전철 · 분리 / 비분리"
+    },
+    {
+      "de": "e-Einschub · s-Ausfall · e-Ausfall",
+      "ko": "e 넣기 · s 빠짐 · e 빠짐"
+    },
+    {
+      "de": "Partizip II · Partizip Perfekt",
+      "ko": "과거분사"
+    },
+    {
+      "de": "Infinitiv · doppelter Infinitiv",
+      "ko": "원형 · 이중 원형"
+    },
+    {
+      "de": "Prädikat (Satzaussage)",
+      "ko": "술어"
+    },
+    {
+      "de": "Hauptsatz · Nebensatz · W-Frage · Fragesatz ohne W-Fragewort",
+      "ko": "주문장 · 부문장 · 의문사 의문문 · 의문사 없는 의문문"
+    },
+    {
+      "de": "Position 1 / 2. Position / letzte Position",
+      "ko": "1번째 / 2번째 / 마지막 자리"
+    },
+    {
+      "de": "Vorzeitigkeit",
+      "ko": "먼저임 (다른 일보다 앞섬)"
+    },
+    {
+      "de": "Prognose · Versprechen · Intention · Vermutung",
+      "ko": "예측 · 약속 · 의도 · 짐작"
+    },
+    {
+      "de": "Modus · Indikativ · Konjunktiv · Imperativ",
+      "ko": "법 · 직설법 · 접속법 · 명령법"
+    },
+    {
+      "de": "K I · K II",
+      "ko": "접속법 1식 · 접속법 2식"
+    },
+    {
+      "de": "indirekte Rede",
+      "ko": "간접화법"
+    },
+    {
+      "de": "Aktiv · Passiv · Vorgangspassiv · Zustandspassiv",
+      "ko": "능동 · 수동 · 동작수동 · 상태수동"
+    },
+    {
+      "de": "Akkusativobjekt · Dativobjekt",
+      "ko": "4격 목적어 · 3격 목적어"
+    },
+    {
+      "de": "transitiv / intransitiv",
+      "ko": "타동사 / 자동사"
+    },
+    {
+      "de": "Bildung · Gebrauch · Besonderheiten · Alternative",
+      "ko": "만들기 · 쓰임 · 특이점 · 대신 쓰는 말"
+    },
+    {
+      "de": "Achtung! · Ebenso · Aber · Seltener · Nicht",
+      "ko": "주의! · 마찬가지 · 하지만 · 드물게 · 틀림(✗)"
+    },
+    {
+      "de": "duzen / siezen",
+      "ko": "du로 부르다 / Sie로 부르다"
+    }
+  ],
+  "sheet_headings": [
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "표지",
+      "de": "AUF EINEN BLICK · Zeiten · DEUTSCH",
+      "ko": "한눈에 보는 시제 · 독일어",
+      "note": "1쪽 위쪽은 표지 (PONS, € 5,–)"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "큰 단원",
+      "de": "Tempus der Gegenwart",
+      "ko": "지금의 시제",
+      "note": "지금을 말하는 시제는 현재 하나"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "작은 단원",
+      "de": "Präsens",
+      "ko": "현재"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "Präsensstamm (= Infinitiv ohne die Endung -(e)n) + Personalendung",
+      "ko": "현재 어간 (= 원형에서 -(e)n을 뗀 것) + 인칭 어미",
+      "note": "예: kommen"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "표 라벨",
+      "de": "Präsensstamm · Personalendung · Singular · Plural",
+      "ko": "현재 어간 · 인칭 어미 · 단수 · 복수"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Besonderheiten",
+      "ko": "특이점",
+      "note": "e-Einschub, s-Ausfall, e-Ausfall"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Achtung!",
+      "ko": "주의!",
+      "note": "tun: ich tu(e)"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Hilfsverben",
+      "ko": "조동사",
+      "note": "현재는 일부 다른 어간으로 만듦. sein · haben · werden 표"
+    },
+    {
+      "loc": "1쪽 · 왼쪽 단",
+      "kind": "참고 상자",
+      "de": "Achtung! Verwechseln Sie seid nicht mit der Präposition bzw. Konjunktion seit.",
+      "ko": "주의! seid를 전치사·접속사 seit와 헷갈리지 말 것"
+    },
+    {
+      "loc": "1쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Verben mit Vokalwechsel",
+      "ko": "모음이 바뀌는 동사",
+      "note": "a → ä, au → äu, e → i(e)"
+    },
+    {
+      "loc": "1쪽 · 가운데 단",
+      "kind": "굵은 제목",
+      "de": "Achtung!",
+      "ko": "주의!",
+      "note": "wissen: ich weiß"
+    },
+    {
+      "loc": "1쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Modalverben",
+      "ko": "화법조동사",
+      "note": "können · müssen · dürfen · wollen · sollen · mögen 표"
+    },
+    {
+      "loc": "1쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Verben mit Präfix",
+      "ko": "전철이 있는 동사"
+    },
+    {
+      "loc": "1쪽 · 가운데 단",
+      "kind": "공식 박스",
+      "de": "be-, emp-, ent-, er-, ge-, miss-, ver-, zer-",
+      "ko": "비분리 전철",
+      "note": "모든 시제에서 붙어 있음. 본동사에 강세"
+    },
+    {
+      "loc": "1쪽 · 가운데 단",
+      "kind": "공식 박스",
+      "de": "ab-, an-, auf-, aus-, bei-, ein-, fest-, fort-, her-, hin-, los-, mit-, vor-, weg-, zu-, zurück-, zusammen- …",
+      "ko": "분리 전철",
+      "note": "현재·과거에서 떨어짐. 전철에 강세, 문장 끝"
+    },
+    {
+      "loc": "1쪽 · 오른쪽 단",
+      "kind": "표지",
+      "de": "www.pons.de/zeiten-aeb – Hier finden Sie ein kleines Zeiten-Training.",
+      "ko": "여기서 짧은 시제 연습을 할 수 있음",
+      "note": "QR 코드"
+    },
+    {
+      "loc": "1쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "durch-, hinter-, über-, um-, unter-, voll-, wider-, wieder-",
+      "ko": "뜻에 따라 분리·비분리",
+      "note": "umfahren 두 가지"
+    },
+    {
+      "loc": "1쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임",
+      "note": "Allgemeingültiges und Fakten · Gegenwärtiges · Zukünftiges · Vergangenes (historisches Präsens)"
+    },
+    {
+      "loc": "1쪽 · 오른쪽 단",
+      "kind": "굵은 제목",
+      "de": "Präzisierung durch Zeitangaben",
+      "ko": "시간 표현으로 때를 밝힘",
+      "note": "Gegenwart · Zukunft · Vergangenheit"
+    },
+    {
+      "loc": "2쪽 · 왼쪽 단",
+      "kind": "큰 단원",
+      "de": "Stammformen, Verbstamm, Stammvokal und Partizip II",
+      "ko": "기본형, 동사 어간, 어간 모음과 과거분사",
+      "note": "세 기본형과 세 어간"
+    },
+    {
+      "loc": "2쪽 · 왼쪽 단",
+      "kind": "참고 상자",
+      "de": "Merken Sie sich bei jedem Verb die drei Stammformen.",
+      "ko": "동사마다 세 기본형을 외울 것",
+      "note": "현재 du형도 함께"
+    },
+    {
+      "loc": "2쪽 · 왼쪽 단",
+      "kind": "작은 단원",
+      "de": "Die 3. Stammform: Das Partizip II",
+      "ko": "3번째 기본형: 과거분사"
+    },
+    {
+      "loc": "2쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "2쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "bei starken Verben: ge- + Perfektstamm + -en / bei schwachen Verben und Mischverben: ge- + Perfektstamm + -(e)t",
+      "ko": "강변화: ge- + 완료 어간 + -en / 약변화·혼합: ge- + 완료 어간 + -(e)t"
+    },
+    {
+      "loc": "2쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Besonderheiten:",
+      "ko": "특이점",
+      "note": "분리 전철, 비분리 전철, -ieren"
+    },
+    {
+      "loc": "2쪽 · 가운데 단",
+      "kind": "큰 단원",
+      "de": "Tempus der Vergangenheit",
+      "ko": "과거의 시제",
+      "note": "과거, 현재완료, 과거완료"
+    },
+    {
+      "loc": "2쪽 · 가운데 단",
+      "kind": "작은 단원",
+      "de": "Perfekt",
+      "ko": "현재완료"
+    },
+    {
+      "loc": "2쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "2쪽 · 가운데 단",
+      "kind": "공식 박스",
+      "de": "Präsens von haben oder sein + Partizip II",
+      "ko": "haben 또는 sein의 현재 + 과거분사"
+    },
+    {
+      "loc": "2쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Perfekt mit haben",
+      "ko": "haben과 쓰는 현재완료"
+    },
+    {
+      "loc": "2쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Perfekt mit sein",
+      "ko": "sein과 쓰는 현재완료"
+    },
+    {
+      "loc": "2쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임"
+    },
+    {
+      "loc": "2쪽 · 오른쪽 단",
+      "kind": "작은 단원",
+      "de": "Plusquamperfekt",
+      "ko": "과거완료"
+    },
+    {
+      "loc": "2쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "2쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "Präteritum von haben oder sein + Partizip II",
+      "ko": "haben 또는 sein의 과거 + 과거분사"
+    },
+    {
+      "loc": "2쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Plusquamperfekt mit haben oder sein",
+      "ko": "haben이냐 sein이냐",
+      "note": "현재완료와 같은 규칙"
+    },
+    {
+      "loc": "2쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임"
+    },
+    {
+      "loc": "2쪽 · 오른쪽 단",
+      "kind": "표 라벨",
+      "de": "Plusquamperfekt / Präteritum · im Hauptsatz / im Nebensatz",
+      "ko": "과거완료 / 과거 · 주문장 / 부문장",
+      "note": "세 가지 짝"
+    },
+    {
+      "loc": "2쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Besonderheiten bei Perfekt und Plusquamperfekt",
+      "ko": "현재완료·과거완료의 특이점",
+      "note": "동사가 여럿일 때 어순. → siehe auch Seite 3 (3쪽도 볼 것)"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "작은 단원",
+      "de": "Präteritum",
+      "ko": "과거"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung bei schwachen Verben",
+      "ko": "약변화 동사의 만들기"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "Präsensstamm + -t- + Personalendungen -e, -est, -e, -en, -et, -en",
+      "ko": "현재 어간 + -t- + 인칭 어미"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "e-Einschub",
+      "ko": "e 넣기",
+      "note": "현재와 같은 규칙 (→ Seite 1)"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung bei starken Verben",
+      "ko": "강변화 동사의 만들기"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "Präteritumstamm + Personalendungen –, -st, –, -en, -t, -en",
+      "ko": "과거 어간 + 인칭 어미",
+      "note": "ich형과 er/sie/es형은 어미 없음"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung bei Mischverben",
+      "ko": "혼합 동사의 만들기"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "Präteritumstamm + -t- + Personalendungen -e, -est, -e, -en, -et, -en",
+      "ko": "과거 어간 + -t- + 인칭 어미"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Präteritumformen der Hilfsverben",
+      "ko": "조동사의 과거형",
+      "note": "sein · haben · werden 표"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임",
+      "note": "Sachtexte · Erzählende Texte · Beim Sprechen in förmlichen Situationen"
+    },
+    {
+      "loc": "3쪽 · 왼쪽 단",
+      "kind": "참고 상자",
+      "de": "Die Hilfsverben sein und haben und die Modalverben werden auch beim Sprechen häufiger im Präteritum als im Perfekt benutzt.",
+      "ko": "sein, haben과 화법조동사는 말할 때도 현재완료보다 과거를 더 자주 씀"
+    },
+    {
+      "loc": "3쪽 · 가운데 단",
+      "kind": "큰 단원",
+      "de": "Stellung der Verben im Satz",
+      "ko": "문장 속 동사 자리",
+      "note": "가운데·오른쪽 단을 가로지르는 표"
+    },
+    {
+      "loc": "3쪽 · 가운데 단",
+      "kind": "작은 단원",
+      "de": "Prädikat mit einfachem Verb",
+      "ko": "동사 하나로 된 술어"
+    },
+    {
+      "loc": "3쪽 · 가운데 단",
+      "kind": "표 라벨",
+      "de": "Präsens, Präteritum | Perfekt, Plusquamperfekt, Futur I",
+      "ko": "현재·과거 | 현재완료·과거완료·미래",
+      "note": "표의 두 열"
+    },
+    {
+      "loc": "3쪽 · 가운데 단",
+      "kind": "표 라벨",
+      "de": "Hauptsatz und W-Fragen · Nebensatz · Fragesatz ohne W-Fragewort · Imperativ",
+      "ko": "주문장과 의문사 의문문 · 부문장 · 의문사 없는 의문문 · 명령법",
+      "note": "표의 네 줄"
+    },
+    {
+      "loc": "3쪽 · 가운데 단",
+      "kind": "작은 단원",
+      "de": "Prädikat mit trennbarem Verb",
+      "ko": "분리동사로 된 술어"
+    },
+    {
+      "loc": "3쪽 · 가운데 단",
+      "kind": "작은 단원",
+      "de": "Prädikat mit mehreren Verben",
+      "ko": "여러 동사로 된 술어",
+      "note": "화법조동사 + 원형 또는 본동사 + 원형"
+    },
+    {
+      "loc": "3쪽 · 가운데 단",
+      "kind": "굵은 제목",
+      "de": "* Anmerkung",
+      "ko": "* 덧붙임",
+      "note": "이중 원형을 만드는 동사: lassen, brauchen, sehen, hören, fühlen, spüren"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "큰 단원",
+      "de": "Tempus der Zukunft",
+      "ko": "미래의 시제",
+      "note": "Futur I과 Futur II"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "작은 단원",
+      "de": "Futur I",
+      "ko": "미래"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "Präsensform von werden + Infinitiv des Vollverbs",
+      "ko": "werden의 현재형 + 본동사 원형"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임",
+      "note": "Prognose · Versprechen · Intention · Vermutung"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "참고 상자",
+      "de": "Es gibt einige Redensarten im Futur I, die eine Drohung oder Warnung ausdrücken",
+      "ko": "위협이나 경고를 나타내는 미래의 관용 표현"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Alternative zum Futur I",
+      "ko": "미래 대신 쓰는 말",
+      "note": "시간 표현 + 현재"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "작은 단원",
+      "de": "Futur II",
+      "ko": "미래완료"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "4쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "Präsensform von werden + Partizip Perfekt des Vollverbs + Infinitiv von haben oder sein",
+      "ko": "werden의 현재형 + 본동사의 과거분사 + haben 또는 sein의 원형"
+    },
+    {
+      "loc": "4쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임",
+      "note": "Vorzeitigkeit zum Futur I · Vermutung über die Vergangenheit"
+    },
+    {
+      "loc": "4쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Alternative zum Futur II",
+      "ko": "미래완료 대신 쓰는 말",
+      "note": "현재완료"
+    },
+    {
+      "loc": "4쪽 · 가운데 단",
+      "kind": "굵은 제목",
+      "de": "Futur II: / → Besser im Perfekt:",
+      "ko": "미래완료: / → 현재완료가 나음:"
+    },
+    {
+      "loc": "4쪽 · 가운데 단",
+      "kind": "큰 단원",
+      "de": "Passiv",
+      "ko": "수동태"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Bildung des Vorgangspassivs",
+      "ko": "동작수동 만들기"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "werden + Partizip II",
+      "ko": "werden + 과거분사"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "Modalverb + Partizip II + werden im Infinitiv",
+      "ko": "화법조동사 + 과거분사 + werden 원형"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Bildung des Zustandspassivs",
+      "ko": "상태수동 만들기"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "sein + Partizip II",
+      "ko": "sein + 과거분사"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "bekommen-Passiv oder Dativ-Passiv",
+      "ko": "bekommen 수동 (3격 수동)"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "bekommen + Partizip II + Dativ mit von",
+      "ko": "bekommen + 과거분사 + von + 3격"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "참고 상자",
+      "de": "In der Umgangssprache wird statt des Verbs bekommen auch häufig das Verb kriegen benutzt",
+      "ko": "입말에서는 bekommen 대신 kriegen도 자주 씀"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임"
+    },
+    {
+      "loc": "4쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Alternative zum Passiv",
+      "ko": "수동 대신 쓰는 말",
+      "note": "man · gehören + 과거분사 · sein + zu 원형"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "큰 단원",
+      "de": "Modus",
+      "ko": "법",
+      "note": "Indikativ · Konjunktiv · Imperativ"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "작은 단원",
+      "de": "Imperativ",
+      "ko": "명령법"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Imperativ Singular:",
+      "ko": "명령법 단수"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "Präsensstamm (→ siehe Seite 2)",
+      "ko": "현재 어간 (→ 2쪽 참고)"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Besonderheiten:",
+      "ko": "특이점",
+      "note": "e 넣기, e → i, Sei!"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Imperativ Plural:",
+      "ko": "명령법 복수"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "ihr-Form im Präsens ohne Pronomen",
+      "ko": "현재 ihr형에서 대명사를 뺌"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Höflicher Imperativ:",
+      "ko": "존칭 명령"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "sie-Form im Plural im Präsens + Sie",
+      "ko": "현재 복수 sie형 + Sie"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "굵은 제목",
+      "de": "Wir-Imperativ:",
+      "ko": "wir 명령"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "공식 박스",
+      "de": "wir-Form im Präsens + wir",
+      "ko": "현재 wir형 + wir"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임",
+      "note": "Befehle · Bitten · Vorschlag · Gute Wünsche"
+    },
+    {
+      "loc": "5쪽 · 왼쪽 단",
+      "kind": "참고 상자",
+      "de": "lass/lasst/lassen Sie + uns + Infinitiv",
+      "ko": "lassen으로 하는 제안",
+      "note": "Besonderheit: 표지판의 원형 명령"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "작은 단원",
+      "de": "Konjunktiv",
+      "ko": "접속법",
+      "note": "Möglichkeitsform. K I과 K II"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "작은 단원",
+      "de": "Konjunktiv I",
+      "ko": "접속법 1식",
+      "note": "간접화법의 접속법"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "공식 박스",
+      "de": "Gegenwart: Präsensstamm + -e/-est/-e/-en/-et/-en",
+      "ko": "현재: 현재 어간 + 접속법 어미"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "공식 박스",
+      "de": "Vergangenheit: haben/sein im K I + Partizip II",
+      "ko": "과거: haben/sein의 K I + 과거분사"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "공식 박스",
+      "de": "Zukunft: werden im K I + Infinitiv",
+      "ko": "미래: werden의 K I + 원형"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "굵은 제목",
+      "de": "Die Formen der Hilfsverben im Konjunktiv I",
+      "ko": "조동사의 접속법 1식",
+      "note": "sein · haben · werden 표"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "굵은 제목",
+      "de": "Besonderheiten",
+      "ko": "특이점",
+      "note": "Passiv im Konjunktiv I · Aufforderung mit sollen"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "작은 단원",
+      "de": "Konjunktiv II",
+      "ko": "접속법 2식"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "소제목",
+      "de": "Bildung",
+      "ko": "만들기"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "굵은 제목",
+      "de": "K II der Gegenwart",
+      "ko": "K II 현재"
+    },
+    {
+      "loc": "5쪽 · 가운데 단",
+      "kind": "공식 박스",
+      "de": "Präteritumstamm + -e, -est, -e, -en, -et, -en",
+      "ko": "과거 어간 + 접속법 어미",
+      "note": "인칭 어미는 K I과 같음"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "굵은 제목",
+      "de": "K II der Vergangen[heit]",
+      "ko": "K II 과거"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "haben oder sein im [K II] + Partizip Perfekt",
+      "ko": "haben 또는 sein의 K II + 과거분사"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "굵은 제목",
+      "de": "Die Formen der Hilfsverben im Konjunktiv II",
+      "ko": "조동사의 접속법 2식",
+      "note": "sein · haben · werden 표"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "굵은 제목",
+      "de": "Alternative zum Konjunktiv II",
+      "ko": "K II 대신 쓰는 말",
+      "note": "würde + 원형"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "굵은 제목",
+      "de": "Passiv im Konjunktiv II",
+      "ko": "접속법 2식의 수동"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "Gegenwart: werden im K II + Partizip II",
+      "ko": "현재: werden의 K II + 과거분사"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "Vergangenheit: sein im K II + Partizip II + worden",
+      "ko": "과거: sein의 K II + 과거분사 + worden"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "굵은 제목",
+      "de": "Konjunktiv II mit Modalverben",
+      "ko": "화법조동사의 접속법 2식"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "Gegenwart: Modalverb im K II + Infinitiv",
+      "ko": "현재: 화법조동사의 K II + 원형"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "공식 박스",
+      "de": "Vergangenheit: haben im K II + Infinitiv + Modalverb im Infinitiv",
+      "ko": "과거: haben의 K II + 원형 + 화법조동사 원형"
+    },
+    {
+      "loc": "5쪽 · 오른쪽 단",
+      "kind": "소제목",
+      "de": "Gebrauch",
+      "ko": "쓰임",
+      "note": "Höfliche Bitte · Höfliche Ratschläge · Irreale Aussagen · Irrealer Vergleich"
+    }
+  ]
+}
